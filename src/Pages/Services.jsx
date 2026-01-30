@@ -29,7 +29,7 @@ export default function Services() {
 
     return (
         <>
-            <div className='w-full h-[40vh] md:h-[35vh]  lg:h-[70vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
+            <div className='w-full h-[55vh] md:h-[35vh]  lg:h-[70vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center pt-42.5 pb-12.5'>
                     <div className="flex flex-col  items-center py-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-gray-800 mb-4'>Lymora Services</h1>
@@ -43,7 +43,7 @@ export default function Services() {
                 <h1 className='font-bold text-[32px] md:text-[36px] mt-3'>What We Deliver</h1>
                 <p className='text-center text-[18px]    mt-4 mb-4'>End-to-end solutions tailored to your business objectives</p>
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-                    className="lg:w-10/12 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 p-2.5">
+                    className="lg:w-10/12 grid grid-cols-1 justify-items-center  md:grid-cols-2 lg:grid-cols-3 gap-6 p-2.5">
                     {services.map((service, index) => (
                         <div key={index} className="relative w-11/12 md:max-w-sm rounded-2xl overflow-hidden bg-blue-300 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                             <div className='overflow-hidden'><img
