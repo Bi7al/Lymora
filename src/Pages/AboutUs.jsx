@@ -17,7 +17,7 @@ function AboutUs() {
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-gray-800 mt-12'>About Lymora</h1>
-                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7'>We are a development and design studio that works closely with software development agencies to create futuristic products through our skilled resources.How we can help you!</p>
+                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-10/12 md:w-5/7 lg:w-4/7'>We are a development and design studio that works closely with software development agencies to create futuristic products through our skilled resources.How we can help you!</p>
                     </div>
                 </div>
             </div>
