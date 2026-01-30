@@ -21,7 +21,7 @@ export default function ContactUs() {
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-gray-800 mt-12'>Get in Touch With Us</h1>
-                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7'>Have questions, need support, or want to discuss your project? We’re here to help! Contact Nextpak below or reach out directly — our team will get back to you as soon as possible.</p>
+                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7'>Have questions, need support, or want to discuss your project? We’re here to help! Contact Lymora below or reach out directly — our team will get back to you as soon as possible.</p>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export default function ContactUs() {
                             />
                             <ContactInfoItem
                                 icon={<Mail size={24} />}
-                                text="Info@nextpak.org"
+                                text="Info@lymora.com"
                             />
                         </div>
                     </div>
