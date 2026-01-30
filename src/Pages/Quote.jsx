@@ -112,7 +112,7 @@ export default function QuoteForm() {
                                     <>
                                         <h2 className="text-2xl font-bold">Contact Details</h2>
 
-                                        <div className="grid gap-4 md:grid-cols-2">
+                                        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
                                             <Input
                                                 label="First Name"
                                                 value={formData.firstName}

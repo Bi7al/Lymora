@@ -19,20 +19,7 @@ function Home() {
 
                     </p>
                 </div>
-                {/* Companies */}
-                {/* <div className='flex justify-center items-center text-white gap-6 pt-22'>
-                    <svg
-                        className="w-6 h-6 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path d="/companies/Travos.svg" />
-                    </svg>
-                    <img className='h-10' src={"/companies/Travos.svg"} alt="" />
-                    <img className='h-10' src={"/companies/Totolk.svg"} alt="" />
-                    <img className='h-10' src={"/companies/Vicon.svg"} alt="" />
-                    <img className='h-10' src={"/companies/Happy-Horizon.svg"} alt="" />
-                </div> */}
+
             </section>
 
             <StatsCounter />
@@ -43,11 +30,11 @@ function Home() {
                 </div>
                 <SwiperCarousal />
             </section>
-
-            <section className="w-full h-[35vh] md:h-[32vh] lg:h-[45vh]  bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-no-repeat bg-right text-white ">
+            {/* CTA SECTION */}
+            <section className="w-full h-[35vh] md:h-[32vh] lg:h-[40vh]  bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-no-repeat bg-right text-white ">
                 <div className='h-full w-full flex flex-col justify-center items-center md:items-start md:ps-4 lg:ps-48 '>
                     <h2 className='text-[24px] md:text-[45px] text-blue-600'>Let's Build</h2>
-                    <h1 className='text-[38px] md:text-[60px] font-extrabold text-black'>Your Dream Project</h1>
+                    <h1 className='text-[32px] md:text-[60px] font-extrabold text-black'>Your Dream Project</h1>
                     <Link to="/quote" className='border-2 border-blue-600 rounded-md py-2 px-4 text-black hover:bg-blue-600 mt-4 md:mt-0' >Request a Quote</Link>
                 </div>
             </section>
@@ -140,6 +127,9 @@ function Home() {
                     <Link to="/quote" className='border-2 border-white rounded-md py-2 px-4 hover:bg-white hover:text-black mt-4 md:mt-0' >Request a Quote</Link>
                 </div>
             </section>
+
+
+
         </>
     )
 }

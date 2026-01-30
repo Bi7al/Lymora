@@ -8,7 +8,7 @@ const PortfolioPage = () => {
     return (
         <div className="bg-white min-h-screen">
             {/* HERO */}
-            <div className='w-full h-[68vh]   md:h-[50vh]  lg:h-[73vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
+            <div className='w-full h-[75vh]   md:h-[50vh]  lg:h-[73vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-start pb-12.5 pt-42.5'>
                     <div className="flex flex-col  items-center py-2.5 w-11/12  ">
                         {/* Heading */}
