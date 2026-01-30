@@ -11,7 +11,9 @@ const PortfolioPage = () => {
             <div className='w-full h-[68vh]   md:h-[50vh]  lg:h-[73vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-start pb-12.5 pt-42.5'>
                     <div className="flex flex-col  items-center py-2.5 w-11/12  ">
-                        <h1 className='w-9/12 lg:w-1/2 text-[36px] md:text-[40px] lg:text-[50px] font-semibold lg:font-bold text-center lg:leading-15 text-gray-800 mb-6 md:mb-4'>Showcasing a Legacy of Digital Innovation</h1>
+                        {/* Heading */}
+                        <h1 className='w-11/12 md:w-9/12 lg:w-1/2 text-[36px] md:text-[40px] lg:text-[50px] font-semibold lg:font-bold text-center lg:leading-15 text-gray-800 mb-6 md:mb-4 leading-tight' >Showcasing a Legacy of Digital Innovation</h1>
+                        {/*  */}
                         <p className='text-center mx-auto md:text-[19px]  text-white w-full md:w-11/12 lg:w-7/12   mb-2 leading-6 '>At Nextpak, we specialize in crafting transformative digital experiences that go beyond functionality to inspire and engage. Our portfolio highlights a diverse range of high-impact applications designed to elevate brands, streamline operations, and foster user delight across the globe.</p>
 
                     </div>

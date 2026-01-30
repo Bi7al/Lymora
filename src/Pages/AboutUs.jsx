@@ -61,7 +61,7 @@ function AboutUs() {
                 </div>
 
             </section>
-            <section className='w-full h-[46vh] md:h-[32vh] lg:h-[46vh] bg-blue-600 py-17.5 '>
+            <section className='w-full min-h-[46vh] md:h-[32vh] lg:h-[46vh] bg-blue-600 py-17.5 '>
                 <h1 className='text-center text-white text-[32px] md:text-[40px] font-semibold'>Ready to Join Our Story?</h1>
                 <p className='text-center text-white text-[18px] mt-6'>Discover opportunities to be part of our innovative journey.</p>
                 <div className='flex flex-col justify-center items-center md:flex-row gap-6 mt-7 px-4'>
