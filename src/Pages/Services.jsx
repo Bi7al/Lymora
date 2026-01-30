@@ -33,7 +33,7 @@ export default function Services() {
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center pt-42.5 pb-12.5'>
                     <div className="flex flex-col  items-center py-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-gray-800 mb-4'>Lymora Services</h1>
-                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7 mb-4'>Comprehensive development solutions crafted with precision and powered by cutting-edge technology to transform your digital vision into reality.</p>
+                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-10/12 md:w-5/7 lg:w-4/7 mb-4'>Comprehensive development solutions crafted with precision and powered by cutting-edge technology to transform your digital vision into reality.</p>
                         <Link to="/contact" className='py-2 px-4 bg-blue-600 text-white mb-8 rounded-md hover:bg-white hover:text-black'>Contact Us</Link>
                     </div>
                 </div>

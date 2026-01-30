@@ -13,7 +13,7 @@ function AboutUs() {
     ];
     return (
         <>
-            <div className='w-full h-[40vh]   lg:h-[68vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
+            <div className='w-full h-[45vh]   lg:h-[68vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-gray-800 mt-12'>About Lymora</h1>
