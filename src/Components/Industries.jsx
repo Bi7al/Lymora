@@ -65,7 +65,7 @@ const Industries = () => {
                                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                                     {industry.title}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed text-sm">
+                                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                                     {industry.desc}
                                 </p>
                             </div>

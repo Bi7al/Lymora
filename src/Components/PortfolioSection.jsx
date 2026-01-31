@@ -4,28 +4,28 @@ import { Link } from 'react-router-dom';
 const PortfolioGrid = () => {
     const projects = [
         {
-            title: "Tealpot",
-            category: "Web & Mobile Application",
+            title: "Haven Comic",
+            category: "Ecommerce Website",
             image: "https://nextpak.org/wp-content/uploads/2025/04/1.jpg",
-            link: "https://nextpak.org/portfolio/tealpot/"
+            link: "https://haven-comic.com/"
         },
         {
-            title: "EternitAI",
+            title: "TrackPal",
             category: "Web Application",
             image: "https://nextpak.org/wp-content/uploads/2025/04/2.jpg",
-            link: "https://nextpak.org/portfolio/eternitai/"
+            link: "https://trackpal.co/"
         },
         {
-            title: "Tisume",
+            title: "TalentBook",
             category: "Web Application",
             image: "https://nextpak.org/wp-content/uploads/2025/04/3.jpg",
-            link: "https://nextpak.org/portfolio/tisume/"
+            link: "https://talentbook.us/"
         },
         {
-            title: "Sportfolio",
-            category: "Web Application",
+            title: "Anson Belt",
+            category: "Shopify Store",
             image: "https://nextpak.org/wp-content/uploads/2025/04/5.jpg",
-            link: "https://nextpak.org/portfolio/sportfolio/"
+            link: "https://ansonbelt.com/"
         }
     ];
 

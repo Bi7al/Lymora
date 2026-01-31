@@ -65,8 +65,8 @@ function AboutUs() {
                 <h1 className='text-center text-white text-[32px] md:text-[40px] font-semibold'>Ready to Join Our Story?</h1>
                 <p className='text-center text-white text-[18px] mt-6'>Discover opportunities to be part of our innovative journey.</p>
                 <div className='flex flex-col justify-center items-center md:flex-row gap-6 mt-7 px-4'>
-                    <Link className=' text-white bg-sky-600 text-center w-full md:w-auto px-8 py-2.5 hover:bg-black rounded-md'>Explore Careers</Link>
-                    <Link className='text-white border-2 border-white text-center w-full md:w-auto px-8 py-2 hover:bg-white hover:text-black rounded-md'>Start Your Project</Link>
+                    <Link to={"/contact"} className=' text-white bg-sky-600 text-center w-full md:w-auto px-8 py-2.5 hover:bg-black rounded-md'>Contact Us</Link>
+                    <Link to={'/quote'} className='text-white border-2 border-white text-center w-full md:w-auto px-8 py-2 hover:bg-white hover:text-black rounded-md'>Start Your Project</Link>
                 </div>
             </section>
 

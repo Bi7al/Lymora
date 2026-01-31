@@ -41,6 +41,7 @@ const TechSection = () => {
         }
     ];
 
+
     return (
         <section className="py-10 lg:py-20 bg-blue-200">
             <div className="max-w-7xl mx-auto px-6">
@@ -86,7 +87,7 @@ const TechSection = () => {
 
                 {/* --- DESKTOP VIEW (Tabs) --- */}
                 <div className="hidden md:flex flex-col  items-center">
-                    <div className="flex gap-8 md:gap-16 lg:gap-20 mt-4 mb-12 border-b border-gray-100">
+                    <div className="flex gap-8 md:gap-16 lg:gap-20 mt-4 mb-12 border-b border-gray-100 ">
                         {categories.map((cat, idx) => (
                             <button
                                 key={idx}
@@ -106,7 +107,8 @@ const TechSection = () => {
                         key={activeTab}
                         initial={{ opacity: 0, x: 10 }}
                         animate={{ opacity: 1, x: 0 }}
-                        className="grid grid-cols-4 lg:grid-cols-6 gap-8"
+                        className={`grid grid-cols-4 lg:grid-cols-6 gap-8`}
+                        style={{ gridTemplateColumns: `repeat(${categories[activeTab].items.length}, minmax(0, 1fr))` }}
                     >
                         {categories[activeTab].items.map((item, i) => (
                             <TechCard key={i} item={item} />

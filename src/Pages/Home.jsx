@@ -39,10 +39,10 @@ function Home() {
                 </div>
             </section>
             {/* How we work section */}
-            <section className='w-full h-auto bg-blue-600 px-5 text-white'>
-                <div className='py-10 text-center flex flex-col justify-center items-center'>
-                    <h1 className='text-[32px] font-bold'>How We Work</h1>
-                    <p className='text-[18px] mt-4'>Our proven development process ensures quality results and transparent communication</p>
+            <section className='w-full h-auto bg-blue-600 px-5 text-white py-10 pb-14'>
+                <div className=' text-center flex flex-col justify-center items-center'>
+                    <h1 className='text-[32px] font-bold mt-0'>How We Work</h1>
+                    <p className='text-[18px] mt-4 leading-tight'>Our proven development process ensures quality results and transparent communication</p>
                     <div className='grid grid-cols-1 md:grid-cols-3 lg:flex lg:flex-wrap gap-6 lg:gap-4 w-full lg:justify-evenly'>
 
 
@@ -54,7 +54,7 @@ function Home() {
                                     <UserCheck className='text-black h-8 w-8 mx-auto' />
                                 </div>
                                 <h1 className='text-[18px] mt-4 mb-4 md:font-semibold'>Idea</h1>
-                                <p className='text-[14px] md:text-[18px]  tracking-wider md:tracking-normal'>We start by understanding your vision, goals, and requirements through detailed consultation.
+                                <p className='text-[14px] md:text-[18px]  tracking-wider md:tracking-normal leading-tight'>We start by understanding your vision, goals, and requirements through detailed consultation.
                                 </p>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ function Home() {
                                     <Map className='text-black h-8 w-8 mx-auto' />
                                 </div>
                                 <h1 className='text-[18px] mt-4 mb-4 md:font-semibold'>Plan</h1>
-                                <p className='text-[14px] tracking-wider  md:text-[18px] md:tracking-normal'>Our team creates a comprehensive roadmap with timelines, milestones, and technical specifications.
+                                <p className='text-[14px] tracking-wider  md:text-[18px] md:tracking-normal leading-tight'>Our team creates a comprehensive roadmap with timelines, milestones, and technical specifications.
 
                                 </p>
                             </div>
@@ -79,7 +79,7 @@ function Home() {
                                     <Code className='text-black h-8 w-8 mx-auto' />
                                 </div>
                                 <h1 className='text-[18px] mt-4 mb-4 md:font-semibold'>Develop</h1>
-                                <p className='text-[14px] tracking-wider  md:text-[18px] md:tracking-normal'>Using agile methodologies, we build your solution with regular updates and feedback cycles.
+                                <p className='text-[14px] tracking-wider  md:text-[18px] md:tracking-normal leading-tight'>Using agile methodologies, we build your solution with regular updates and feedback cycles.
 
                                 </p>
                             </div>
@@ -91,7 +91,7 @@ function Home() {
                                     <History className='text-black h-8 w-8 mx-auto' />
                                 </div>
                                 <h1 className='text-[18px] mt-4 mb-4 md:font-semibold'>Iterative Development</h1>
-                                <p className='text-[14px] tracking-wider  md:text-[18px] md:tracking-normal'>Build in short cycles, allowing for contunuous feedback and rapid improvements.
+                                <p className='text-[14px] tracking-wider  md:text-[18px] md:tracking-normal leading-tight'>Build in short cycles, allowing for contunuous feedback and rapid improvements.
                                 </p>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ function Home() {
                                     <Eye className='text-black h-8 w-8 mx-auto' />
                                 </div>
                                 <h1 className='text-[18px] mt-4 mb-4 md:font-semibold'>Retrospectives</h1>
-                                <p className='text-[14px] tracking-wider md:text-[18px] md:tracking-normal'>Continiously Reflect on each sprint to celebrate wins and identify opportunity for process improvements.
+                                <p className='text-[14px] tracking-wider md:text-[18px] md:tracking-normal leading-tight'>Continiously Reflect on each sprint to celebrate wins and identify opportunity for process improvements.
                                 </p>
                             </div>
                         </div>
