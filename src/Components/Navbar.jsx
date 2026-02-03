@@ -22,13 +22,13 @@ const Navbar = () => {
             className="fixed top-0 left-0 w-full z-50 bg-[#11395A]/80 backdrop-blur-md md:shadow-sm"
         >
             <div className="w-full px-2 md:px-10 lg:px-12">
-                <div className="flex justify-between items-center p-2 h-16 md:h-20 lg:h-24">
+                <div className="flex justify-between items-center p-4 ps-0  md:p-2 h-16 md:h-20 lg:h-24">
 
                     {/* Logo */}
-                    <Link to="/" className="shrink w-50 h-50">
+                    <Link to="/" className="shrink w-1/2 md:w-50 h-50">
                         <img
-                            className="w-full h-full object-cover"
-                            src="/logo.png"
+                            className="w-full h-full object-contain"
+                            src="/logo_nav.png"
                             alt="Lymora Logo"
                         />
                     </Link>
