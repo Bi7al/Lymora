@@ -27,9 +27,9 @@ const ServiceTemplate = () => {
                         </h1>
                         <p className="text-gray-600 text-lg leading-relaxed max-w-xl">{data.hero.description}</p>
                         <div className="flex flex-wrap gap-4 pt-4">
-                            <button className="flex items-center gap-2 px-8 py-4 bg-[#12ABEE] text-white font-bold rounded-xl shadow-lg hover:bg-[#11395A] transition-all active:scale-95">
+                            <Link to="/contact"><button className="flex items-center gap-2 px-8 py-4 bg-[#12ABEE] text-white font-bold rounded-xl shadow-lg hover:bg-[#11395A] transition-all active:scale-95">
                                 Get Started <ArrowRight size={20} />
-                            </button>
+                            </button></Link>
                             <button className="group flex items-center gap-2 px-8 py-4 bg-white border-2 border-gray-100 text-[#1C1B17] font-bold rounded-xl hover:border-[#12ABEE] transition-all">
                                 Schedule Consultation <ArrowRight size={20} className="text-[#12ABEE]" />
                             </button>
@@ -130,7 +130,7 @@ const ServiceTemplate = () => {
             </section>
 
             {/* CALL TO ACTION */}
-            <section className="w-full h-[40vh] bg-[#11395A] relative">
+            <section className="w-full h-[40vh] bg-[#11395A] relative border-b border-white">
                 <div className='h-full w-full flex flex-col justify-center items-center md:items-start md:ps-4 lg:ps-48 relative z-10'>
                     <h2 className='text-[24px] md:text-[45px] text-[#12ABEE] font-bold'>Ready to Start?</h2>
                     <h1 className='text-[32px] sm:text-[38px] md:text-[60px] font-extrabold text-white'>Your Dream Project</h1>

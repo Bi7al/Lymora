@@ -706,7 +706,7 @@ const serviceDataArray = [{
             {
                 title: "Digital Marketing",
                 desc: "Strategic campaigns designed to increase brand visibility, drive traffic, and boost ROI across digital channels.",
-                image: "/services/digital_marketing.jpg",
+                image: "/services/digi_market.jpg",
                 link: "/services/2"
             }
         ]

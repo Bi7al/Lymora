@@ -127,7 +127,7 @@ const VisionariesTab = () => {
                 <h2 className="text-2xl md:text-[40px] font-bold text-[#1C1B17] mb-4">
                     Meet the Visionaries
                 </h2>
-                <p className="text-gray-500 max-w-2xl mx-auto lg:text-[18px]">
+                <p className="text-gray-500 px-2 max-w-2xl mx-auto lg:text-[18px]">
                     Meet the visionary leaders who shape Lymora’s innovative future.
                 </p>
             </div>
