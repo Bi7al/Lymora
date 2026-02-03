@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const TechSection = () => {
-    const [activeTab, setActiveTab] = useState(0); // For Desktop Tabs
-    const [expandedMobile, setExpandedMobile] = useState(0); // For Mobile Accordion
+    const [activeTab, setActiveTab] = useState(0);
+    const [expandedMobile, setExpandedMobile] = useState(0);
 
     const categories = [
         {
@@ -41,13 +41,12 @@ const TechSection = () => {
         }
     ];
 
-
     return (
-        <section className="py-10 lg:py-20 bg-blue-200">
+        <section className="py-10 lg:py-20 bg-[#EAF6FD]">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="mb-10 text-center w-full ">
-                    <h2 className="text-[32px] md:text-[34px] lg:text-[40px] w-2/3 lg:w-1/4 font-bold text-gray-900 tracking-wide mx-auto">
+                <div className="mb-10 text-center w-full">
+                    <h2 className="text-[32px] md:text-[34px] lg:text-[40px] w-2/3 lg:w-1/4 font-bold text-[#1C1B17] tracking-wide mx-auto">
                         Technologies We Use
                     </h2>
                 </div>
@@ -58,7 +57,7 @@ const TechSection = () => {
                         <div key={idx} className="border border-gray-100 rounded-xl overflow-hidden shadow-sm">
                             <button
                                 onClick={() => setExpandedMobile(expandedMobile === idx ? -1 : idx)}
-                                className={`w-full flex justify-between items-center p-5 text-left font-bold transition-colors ${expandedMobile === idx ? 'bg-blue-600 text-white' : 'bg-gray-50 text-gray-700'
+                                className={`w-full flex justify-between items-center p-5 text-left font-bold transition-colors ${expandedMobile === idx ? 'bg-[#12ABEE] text-white' : 'bg-white text-gray-700'
                                     }`}
                             >
                                 {cat.title}
@@ -86,18 +85,21 @@ const TechSection = () => {
                 </div>
 
                 {/* --- DESKTOP VIEW (Tabs) --- */}
-                <div className="hidden md:flex flex-col  items-center">
-                    <div className="flex gap-8 md:gap-16 lg:gap-20 mt-4 mb-12 border-b border-gray-100 ">
+                <div className="hidden md:flex flex-col items-center">
+                    <div className="flex gap-8 md:gap-16 lg:gap-20 mt-4 mb-12 border-b border-gray-200">
                         {categories.map((cat, idx) => (
                             <button
                                 key={idx}
                                 onClick={() => setActiveTab(idx)}
-                                className={`pb-4 text-lg font-bold transition-all relative ${activeTab === idx ? 'text-blue-600' : 'text-gray-400 hover:text-gray-600'
+                                className={`pb-4 text-lg font-bold transition-all relative ${activeTab === idx ? 'text-[#12ABEE]' : 'text-gray-400 hover:text-gray-600'
                                     }`}
                             >
                                 {cat.title}
                                 {activeTab === idx && (
-                                    <motion.div layoutId="desktopUnderline" className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600" />
+                                    <motion.div
+                                        layoutId="desktopUnderline"
+                                        className="absolute bottom-0 left-0 right-0 h-1 bg-[#12ABEE]"
+                                    />
                                 )}
                             </button>
                         ))}
@@ -105,17 +107,15 @@ const TechSection = () => {
 
                     <motion.div
                         key={activeTab}
-                        initial={{ opacity: 0, x: 10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className={`grid grid-cols-4 lg:grid-cols-6 gap-8`}
-                        style={{ gridTemplateColumns: `repeat(${categories[activeTab].items.length}, minmax(0, 1fr))` }}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="flex flex-wrap justify-center gap-8"
                     >
                         {categories[activeTab].items.map((item, i) => (
                             <TechCard key={i} item={item} />
                         ))}
                     </motion.div>
                 </div>
-
             </div>
         </section>
     );
@@ -124,14 +124,14 @@ const TechSection = () => {
 /* Reusable Tech Item Card */
 const TechCard = ({ item }) => (
     <div className="flex flex-col items-center group cursor-default">
-        <div className="w-20 h-20 md:w-24 lg:w-35 lg:h-35 md:h-24 p-4 mb-3 bg-gray-50 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-md border border-transparent hover:border-[#97D749]/20">
+        <div className="w-20 h-20 md:w-24 lg:w-32 lg:h-32 md:h-24 p-4 mb-3 bg-white rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg border border-transparent hover:border-[#85E645]">
             <img
                 src={item.img}
                 alt={item.name}
-                className="max-w-full max-h-full object-contain filter group-hover:grayscale transition-all"
+                className="max-w-full max-h-full object-contain transition-all"
             />
         </div>
-        <p className="text-[12px] md:text-sm lg:text-base font-bold text-gray-600 group-hover:text-blue-600 uppercase tracking-tight transition-colors">
+        <p className="text-[12px] md:text-sm lg:text-base font-bold text-gray-600 group-hover:text-[#12ABEE] uppercase tracking-tight transition-colors">
             {item.name}
         </p>
     </div>

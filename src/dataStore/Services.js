@@ -199,7 +199,7 @@ const serviceDataArray = [{
             link: "/services/4"
         }
     ]
-}, {
+    }, {
     hero: {
         titleLine1: "Digital",
         titleLine2: "Marketing",
@@ -637,7 +637,80 @@ const serviceDataArray = [{
             link: "/services/2"
         }
     ]
-}];
+    }, {
+        hero: {
+            titleLine1: "Shopify",
+            titleLine2: "Development",
+            description: "High-performance e-commerce experiences built on the world's leading commerce platform. From custom Liquid themes to headless Shopify implementations, we build scalable online stores designed to convert visitors into loyal customers and streamline your retail operations.",
+            image: "/services/shopify_dev.jpg"
+        },
+        benefits: [
+            "Fully responsive stores optimized for mobile shopping",
+            "Seamless integration with third-party ERPs and CRMs",
+            "Custom app development for unique business logic",
+            "Optimized page speeds for better SEO and lower bounce rates",
+            "Secure, PCI-compliant checkout and payment processing",
+            "Easy-to-manage backends for non-technical staff"
+        ],
+        process: [
+            {
+                title: "Strategy & Store Audit",
+                desc: "We evaluate your product catalog and business goals to plan the optimal store architecture."
+            },
+            {
+                title: "Custom UI/UX Design",
+                desc: "We design high-conversion layouts that align with your brand's visual identity and retail niche."
+            },
+            {
+                title: "Theme Development",
+                desc: "Our developers build custom, lightweight Liquid themes or extend existing ones without bloat."
+            },
+            {
+                title: "App & API Integration",
+                desc: "We connect your store to essential tools for shipping, inventory, and marketing automation."
+            },
+            {
+                title: "Quality Assurance",
+                desc: "Rigorous testing across browsers and devices to ensure a flawless checkout experience."
+            },
+            {
+                title: "Launch & Optimization",
+                desc: "We manage the migration and go-live process, followed by ongoing performance tuning."
+            }
+        ],
+        technologies: [
+            {
+                stack: "Shopify Liquid + Hydrogen",
+                description: "Native Shopify templating and React-based headless frameworks for custom storefronts.",
+                tags: ["Liquid", "React", "Hydrogen"]
+            },
+            {
+                stack: "Polaris + GraphQL",
+                description: "Official Shopify design systems and high-efficiency data querying for custom apps.",
+                tags: ["Polaris", "GraphQL", "Node.js"]
+            }
+        ],
+        relatedServices: [
+            {
+                title: "UI/UX Design",
+                desc: "We craft intuitive, accessible, and visually stunning interfaces that maximize conversion rates.",
+                image: "/services/ui_ux.jpg",
+                link: "/services/0"
+            },
+            {
+                title: "Web Development",
+                desc: "We build robust, scalable web applications using modern full-stack technologies and agile methodologies.",
+                image: "/services/web_dev.jpg",
+                link: "/services/1"
+            },
+            {
+                title: "Digital Marketing",
+                desc: "Strategic campaigns designed to increase brand visibility, drive traffic, and boost ROI across digital channels.",
+                image: "/services/digital_marketing.jpg",
+                link: "/services/2"
+            }
+        ]
+    }];
 export default serviceDataArray;
 
 const services = [
@@ -690,7 +763,14 @@ const services = [
         description: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
         imageUrl: "/services/ecom.jpg",
         link: "/services/8"
+    },
+    {
+        title: "Shopify Development",
+        description: "High-performance e-commerce experiences built on the world's leading commerce platform with custom themes and seamless integrations.",
+        imageUrl: "/services/shopify_dev.jpg",
+        link: "/services/9"
     }
+
 ]
 
 export { services };

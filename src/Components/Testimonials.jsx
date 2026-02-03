@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
-// Swiper styles must be imported for the carousel to render correctly
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -43,16 +42,18 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section id="testimonials" className="w-full py-12 lg:py-18  bg-[#F9FAFB] overflow-hidden">
+        <section id="testimonials" className="w-full py-12 lg:py-18 bg-[#F8FAFC] overflow-hidden">
             <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
 
                 {/* Header Section */}
                 <div className="text-center mb-10 md:mb-4">
-                    <h2 className="mt-0 text-[28px] md:text-[34px] lg:text-[40px] font-bold text-gray-900 tracking-tight wrap-break-word">
+                    <h2 className="mt-0 text-[28px] md:text-[34px] lg:text-[40px] font-bold text-[#1C1B17] tracking-tight wrap-break-word">
                         What Our Clients Say
                     </h2>
 
-                    <p className='mt-4 text-[18px] md:text-base md:tracking-wider'>Discover why businesses trust us. Read these testimonials to see how we’ve helped our clients achieve their goals.</p>
+                    <p className='mt-4 text-[18px] md:text-base md:tracking-wider text-gray-500'>
+                        Discover why businesses trust us. Read these testimonials to see how we’ve helped our clients achieve their goals.
+                    </p>
                 </div>
 
                 {/* Carousel Section */}
@@ -63,7 +64,6 @@ const Testimonials = () => {
                         slidesPerView={1}
                         loop={true}
                         autoplay={{ delay: 6000, disableOnInteraction: false }}
-                        /* Fix 2: Dynamic pagination with specific sizing to prevent push */
                         pagination={{
                             clickable: true,
                             el: '.test-pagination',
@@ -76,24 +76,23 @@ const Testimonials = () => {
                     >
                         {testimonials.map((test, index) => (
                             <SwiperSlide key={index} className="pb-12 lg:pb-4">
-                                {/* Fix 3: Card uses w-full and box-border padding */}
-                                <div className="w-full bg-white rounded-2xl md:rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                                <div className="w-full bg-white rounded-2xl md:rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center transition-all hover:border-[#12ABEE]/30">
 
                                     {/* Avatar Section */}
                                     <div className="relative mb-6">
-                                        <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-[#97D749]/20">
+                                        <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-[#85E645]/40">
                                             <img
                                                 src={test.image}
                                                 alt={test.name}
                                                 className="w-full h-full object-cover"
                                             />
                                         </div>
-                                        <div className="absolute -bottom-1 -right-1 bg-blue-600 p-2 rounded-full text-white shadow-lg">
+                                        <div className="absolute -bottom-1 -right-1 bg-[#12ABEE] p-2 rounded-full text-white shadow-lg">
                                             <Quote size={12} fill="white" />
                                         </div>
                                     </div>
 
-                                    {/* Content - Fix 4: Added break-words to handle long text on narrow screens */}
+                                    {/* Content */}
                                     <div className="w-full max-w-2xl mb-8">
                                         <p className="text-gray-600 text-sm md:text-xl font-medium leading-relaxed italic wrap-break-word">
                                             "{test.content}"
@@ -102,8 +101,8 @@ const Testimonials = () => {
 
                                     {/* Identity */}
                                     <div className="w-full border-t border-gray-50 pt-6">
-                                        <h4 className="text-lg font-bold text-gray-900">{test.name}</h4>
-                                        <p className="text-blue-600 font-bold uppercase tracking-widest text-[10px] md:text-[11px] mt-1">
+                                        <h4 className="text-lg font-bold text-[#1C1B17]">{test.name}</h4>
+                                        <p className="text-[#12ABEE] font-bold uppercase tracking-widest text-[10px] md:text-[11px] mt-1">
                                             {test.role}
                                         </p>
                                     </div>
@@ -113,10 +112,10 @@ const Testimonials = () => {
                     </Swiper>
 
                     {/* Navigation Controls - Desktop only */}
-                    <button className="test-prev absolute -left-10 top-1/2 -translate-y-1/2 -translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-blue-600 hidden xl:flex">
+                    <button className="test-prev absolute -left-10 top-1/2 -translate-y-1/2 -translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-[#12ABEE] transition-colors hidden xl:flex">
                         <ChevronLeft size={24} />
                     </button>
-                    <button className="test-next absolute -right-10 top-1/2 -translate-y-1/2 translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-blue-600 hidden xl:flex">
+                    <button className="test-next absolute -right-10 top-1/2 -translate-y-1/2 translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-[#12ABEE] transition-colors hidden xl:flex">
                         <ChevronRight size={24} />
                     </button>
 
@@ -124,6 +123,17 @@ const Testimonials = () => {
                     <div className="test-pagination flex justify-center gap-2 pb-4" />
                 </div>
             </div>
+
+            {/* Global style override for Swiper Pagination to match Action Blue */}
+            <style jsx global>{`
+                .test-pagination .swiper-pagination-bullet-active {
+                    background: #12ABEE !important;
+                }
+                .test-pagination .swiper-pagination-bullet {
+                    background: #cbd5e1;
+                    opacity: 1;
+                }
+            `}</style>
         </section>
     );
 };

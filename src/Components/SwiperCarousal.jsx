@@ -7,7 +7,6 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { img } from 'framer-motion/client';
 
 const services = [
     {
@@ -50,7 +49,7 @@ const services = [
 
 const ServiceCarousel = () => {
     return (
-        <section className=" py-16 lg:px-4  relative">
+        <section className="py-16 lg:px-4 relative ">
             <div className="w-xs md:w-2xl lg:w-4xl mx-auto">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
@@ -67,44 +66,60 @@ const ServiceCarousel = () => {
                         640: { slidesPerView: 1 },
                         768: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
-
                     }}
                     className="pb-4 md:pb-8 lg:pb-12"
                 >
                     {services.map((service, index) => (
-                        <SwiperSlide key={index}><div
-                            style={{ backgroundImage: `url(/services/${service.img}.jpg)` }}
-                            className="bg-cover bg-center shadow-lg rounded-2xl overflow-hidden">
-                            <div className='p-6 flex flex-col h-80 md:h-100 lg:h-120 bg-black/300 backdrop-blur-sm'>
-                                <h2 className="text-2xl font-bold mb-4 h-16 flex items-center">
-                                    {service.title}
-                                </h2>
-                                <p className=" mb-8 grow leading-relaxed">
-                                    {service.desc}
-                                </p>
-                                <a
-                                    href={service.link}
-                                    className="inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transition-colors hover:bg-[#86c341] active:scale-95"
-                                >
-                                    Learn More
-                                </a>
+                        <SwiperSlide key={index}>
+                            <div
+                                style={{ backgroundImage: `url(/services/${service.img}.jpg)` }}
+                                className="bg-cover bg-center shadow-lg rounded-2xl overflow-hidden group"
+                            >
+                                {/* Overlay using Brand Primary Navy #11395A */}
+                                <div className='p-8 flex flex-col h-80 md:h-100 lg:h-120 bg-[#11395A]/80 backdrop-blur-[2px] transition-all duration-300 group-hover:bg-[#11395A]/70'>
+                                    <h2 className="text-2xl font-bold mb-4 h-16 flex items-center text-white">
+                                        {service.title}
+                                    </h2>
+                                    <p className="mb-8 grow leading-relaxed text-gray-100">
+                                        {service.desc}
+                                    </p>
+                                    <a
+                                        href={service.link}
+                                        className="inline-block px-6 py-3 bg-[#12ABEE] text-white text-center font-bold rounded-lg transition-all hover:bg-[#85E645] hover:text-[#1C1B17] active:scale-95 shadow-md"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
                             </div>
-                        </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
 
                 {/* Custom Navigation Controls */}
-                <button className="hidden lg:flex swiper-prev absolute left-20 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white shadow-lg rounded-full items-center justify-center text-gray-400 hover:text-[#97D749] transition-colors lg:-left-6">
-                    <ChevronLeft size={24} />
+                <button className="hidden lg:flex swiper-prev absolute left-20 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white shadow-xl rounded-full items-center justify-center text-gray-400 hover:text-[#12ABEE] transition-all lg:-left-12">
+                    <ChevronLeft size={28} />
                 </button>
-                <button className="hidden lg:flex swiper-next absolute right-20 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white shadow-lg rounded-full  items-center justify-center text-gray-400 hover:text-[#97D749] transition-colors lg:-right-6">
-                    <ChevronRight size={24} />
+                <button className="hidden lg:flex swiper-next absolute right-20 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white shadow-xl rounded-full items-center justify-center text-gray-400 hover:text-[#12ABEE] transition-all lg:-right-12">
+                    <ChevronRight size={28} />
                 </button>
 
                 {/* Custom Pagination Container */}
                 <div className="custom-pagination flex justify-center gap-2 mt-8" />
             </div>
+
+            {/* Pagination Style Override */}
+            <style jsx global>{`
+                .custom-pagination .swiper-pagination-bullet-active {
+                    background: #12ABEE !important;
+                    width: 24px;
+                    border-radius: 4px;
+                }
+                .custom-pagination .swiper-pagination-bullet {
+                    background: #11395A;
+                    opacity: 0.2;
+                    transition: all 0.3s ease;
+                }
+            `}</style>
         </section>
     );
 };

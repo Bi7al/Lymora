@@ -13,25 +13,33 @@ export default function ContactUs() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form Submitted:', formData);
-        // Handle form logic here
     };
+
     return (
         <>
-            <div className='w-full h-[40vh] md:h-[35vh]  lg:h-[70vh] bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 '>
+            {/* Hero */}
+            <div className='w-full h-[40vh] md:h-[35vh] lg:h-[70vh] bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A]'>
                 <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
-                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-gray-800 mt-12'>Get in Touch With Us</h1>
-                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7'>Have questions, need support, or want to discuss your project? We’re here to help! Contact Lymora below or reach out directly — our team will get back to you as soon as possible.</p>
+                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#1C1B17] mt-12'>
+                            Get in Touch With Us
+                        </h1>
+                        <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7'>
+                            Have questions, need support, or want to discuss your project? We’re here to help!
+                            Contact Lymora below or reach out directly — our team will get back to you as soon as possible.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div className='w-full  flex flex-col py-20 px-2.5'>
-                <div className=" mx-auto flex flex-col md:flex-row gap-12 items-start justify-center px-2.5 py-2">
 
-                    {/* Left Column: Contact Info */}
+            {/* Content */}
+            <div className='w-full flex flex-col py-20 px-2.5 bg-[#F8FAFC]'>
+                <div className="mx-auto flex flex-col md:flex-row gap-12 items-start justify-center px-2.5 py-2">
+
+                    {/* Left Column */}
                     <div className="w-full lg:w-2/7 space-y-6">
                         <div className="space-y-4">
-                            <h5 className="font-semibold text-[22px]  tracking-wide">
+                            <h5 className="font-semibold text-[22px] tracking-wide text-[#1C1B17]">
                                 Keep In Touch With Us.
                             </h5>
                             <p className="text-gray-600 lg:text-lg leading-relaxed">
@@ -55,52 +63,39 @@ export default function ContactUs() {
                             />
                         </div>
                     </div>
-                    <div className="w-full lg:w-4/9  ">
+
+                    {/* Form */}
+                    <div className="w-full lg:w-4/9">
                         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="flex flex-col space-y-1">
-                                <label className=" font-semibold text-gray-700">Name</label>
-                                <input
-                                    type="text"
-                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
-                                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                />
-                            </div>
 
-                            <div className="flex flex-col space-y-1">
-                                <label className=" font-semibold text-gray-700">Email *</label>
-                                <input
-                                    required
-                                    type="email"
-                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
-                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                />
-                            </div>
+                            <Input label="Name" onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
 
-                            <div className="flex flex-col space-y-1">
-                                <label className=" font-semibold text-gray-700">Contact Number *</label>
-                                <input
-                                    required
-                                    type="tel"
-                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
-                                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                                />
-                            </div>
+                            <Input
+                                label="Email *"
+                                required
+                                type="email"
+                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            />
 
-                            <div className="flex flex-col space-y-1">
-                                <label className=" font-semibold text-gray-700">Company Name *</label>
-                                <input
-                                    required
-                                    type="text"
-                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
-                                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                                />
-                            </div>
+                            <Input
+                                label="Contact Number *"
+                                required
+                                type="tel"
+                                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            />
+
+                            <Input
+                                label="Company Name *"
+                                required
+                                type="text"
+                                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                            />
 
                             <div className="flex flex-col space-y-1 md:col-span-2">
-                                <label className=" font-semibold text-gray-700">Message</label>
+                                <label className="font-semibold text-gray-700">Message</label>
                                 <textarea
                                     rows="3"
-                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"
+                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#12ABEE] focus:outline-none transition-all"
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 ></textarea>
                             </div>
@@ -108,24 +103,39 @@ export default function ContactUs() {
                             <div className="md:col-span-2">
                                 <button
                                     type="submit"
-                                    className="w-full bg-blue-600 text-white font-bold py-3 rounded-md hover:bg-blue-500 transition-colors shadow-md active:scale-[0.98]"
+                                    className="w-full bg-[#12ABEE] text-white font-bold py-3 rounded-md hover:bg-[#85E645] hover:text-[#1C1B17] transition-colors shadow-md active:scale-[0.98]"
                                 >
                                     Send Message
                                 </button>
                             </div>
+
                         </form>
                     </div>
                 </div>
             </div>
-
         </>
-    )
+    );
 }
+
+/* Input component */
+const Input = ({ label, type = "text", required = false, onChange }) => (
+    <div className="flex flex-col space-y-1">
+        <label className="font-semibold text-gray-700">{label}</label>
+        <input
+            required={required}
+            type={type}
+            className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#12ABEE] focus:outline-none transition-all"
+            onChange={onChange}
+        />
+    </div>
+);
+
+/* Contact item */
 const ContactInfoItem = ({ icon, text }) => (
     <div className="flex items-center space-x-4 group">
-        <div className="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-lg transition-transform group-hover:scale-110">
+        <div className="w-12 h-12 flex items-center justify-center bg-[#12ABEE] text-white rounded-full shadow-lg transition-transform group-hover:scale-110">
             {icon}
         </div>
-        <span className="text-gray-800 text-sm ">{text}</span>
+        <span className="text-[#1C1B17] text-sm">{text}</span>
     </div>
 );
