@@ -21,7 +21,7 @@ function Home() {
         <>
             {/* HERO SECTION */}
             <section className=' w-full h-[40vh] md:h-[35vh] lg:h-[82vh] bg-linear-to-r from-[#11395A]  to-[#11395A]  text-white'>
-                <div className="w-full h-full  flex flex-col justify-center items-center bg-[url('bg/bg_home.png')] bg-center bg-cover">
+                <div className="w-full h-full  flex flex-col justify-center items-center bg-[url('bg/bg_home_mobile.png')] md:bg-[url('bg/bg_home.png')] bg-center bg-cover">
                     <div className='md:w-2/3 lg:w-1/2 py-2.5 lg:mt-4'>
                         <h1 className='text-[32px] md:text-[40px] lg:text-[60px] text-center font-extrabold'>Lymora <span className='text-[#85E645]'>&nbsp;Solutions</span></h1>
                         <p className='md:text-[26px] lg:text-[30px] text-center mt-2 text-wrap px-4 font-medium'>
@@ -34,7 +34,7 @@ function Home() {
             <StatsCounter />
 
             {/* WHAT WE DO SECTION */}
-            <section className='pt-16 w-full bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A] flex flex-col justify-center items-center text-white'>
+            <section className='pt-16 w-full bg-[#11395A]  flex flex-col justify-center items-center text-white'>
                 <div className='md:px-2.5 px-5 text-center flex flex-col justify-center items-center'>
                     <h1 className='text-[30px] md:text-[40px] font-bold mb-4'>What We Do</h1>
                     <p className='text-[14px] md:text-base lg:text-[18px] w-full md:w-3/4 lg:w-1/2 text-blue-50'>
@@ -45,14 +45,29 @@ function Home() {
             </section>
 
             {/* INTERMEDIATE CTA */}
-            <section className="w-full h-[35vh] md:h-[32vh] lg:h-[40vh] bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-no-repeat bg-right bg-white">
-                <div className='h-full w-full flex flex-col justify-center items-center md:items-start md:ps-4 lg:ps-48'>
-                    <h2 className='text-[24px] md:text-[45px] text-[#12ABEE] font-bold'>Let's Build</h2>
-                    <h1 className='text-[32px] md:text-[60px] font-extrabold text-[#1C1B17]'>Your Dream Project</h1>
-                    <Link to="/quote" className='border-2 border-[#12ABEE] rounded-md py-2.5 px-8 text-[#11395A] font-bold hover:bg-[#85E645] hover:border-[#85E645] hover:text-[#1C1B17] transition-all mt-4'>
+            <section className="w-full h-[35vh] md:h-[35vh] lg:h-[38vh] bg-[url('/bg_services.png')] bg-cover bg-center md:bg-right bg-no-repeat bg-white relative overflow-hidden flex items-center">
+
+                {/* Content Container: Centered on mobile, Left-aligned on md+ */}
+                <div className='w-full px-6 md:px-[8vw] lg:px-[12vw] relative z-10 flex flex-col items-center md:items-start text-center md:text-left'>
+
+                    <h2 className='text-[14px] md:text-[20px] lg:text-[22px] text-[#12ABEE] font-semibold uppercase tracking-[0.2em] mb-2'>
+                        Let's Build
+                    </h2>
+
+                    <h1 className='text-[30px] sm:text-[34px] md:text-[48px] lg:text-[54px] font-extrabold text-[#1C1B17] leading-tight'>
+                        Your Dream Project
+                    </h1>
+
+                    <Link
+                        to="/quote"
+                        className='inline-block mt-6 border-2 border-[#12ABEE] text-[#1C1B17] font-bold rounded-md py-3 px-8 text-sm md:text-base hover:bg-[#85E645] hover:border-[#85E645] hover:text-[#11395A] transition-all duration-300 shadow-md'
+                    >
                         Request a Quote
                     </Link>
                 </div>
+
+                {/* Optional: Mobile overlay to ensure text stays readable over the background image */}
+                <div className="absolute inset-0 bg-white/40 md:hidden z-0"></div>
             </section>
 
             {/* HOW WE WORK SECTION */}
@@ -87,15 +102,28 @@ function Home() {
             <Testimonials />
 
             {/* FINAL CTA SECTION */}
-            <section className="w-full h-[40vh] bg-[#11395A] relative overflow-hidden">
-                <div className='h-full w-full bg-linear-to-r from-[#11395A] via-[#12ABEE]/40 flex flex-col justify-center items-center md:items-start md:ps-4 lg:ps-48 relative z-10'>
-                    <h2 className='text-[24px] md:text-[45px] text-white'>Let's Build</h2>
-                    <h1 className='text-[32px] sm:text-[38px] md:text-[60px] font-extrabold text-white'>Your Dream Project</h1>
-                    <Link to="/quote" className='mt-6 border-2 border-[#12ABEE] text-white font-bold rounded-md py-3 px-10 hover:bg-[#85E645] hover:text-[#11395A] transition-all'>
+            <section className="w-full h-[32vh] md:h-[35vh] lg:h-[38vh] bg-[#11395A] relative overflow-hidden flex items-center">
+                {/* Background Gradient Overlay */}
+                <div className='h-full w-full bg-linear-to-r from-[#11395A] via-[#12ABEE]/20 flex flex-col justify-center items-center md:items-start px-6 md:px-[8vw] lg:px-[12vw] relative z-10'>
+
+                    <h2 className='text-[16px] md:text-[20px] lg:text-[22px] text-[#12ABEE] font-semibold uppercase tracking-[0.2em] mb-2'>
+                        Let's Build
+                    </h2>
+
+                    <h1 className='text-[28px] sm:text-[36px] md:text-[48px] lg:text-[54px] font-extrabold text-white leading-tight'>
+                        Your Dream Project
+                    </h1>
+
+                    <Link
+                        to="/quote"
+                        className='mt-6 border-2 border-[#12ABEE] text-white font-bold rounded-md py-3 px-10 text-base hover:bg-[#85E645] hover:border-[#85E645] hover:text-[#11395A] transition-all duration-300 shadow-lg'
+                    >
                         Request a Quote
                     </Link>
                 </div>
-                {/* Subtle background graphic can go here */}
+
+                {/* Decorative Glow */}
+                <div className="absolute top-[-10%] right-[-5%] w-64 h-64 bg-[#12ABEE]/15 rounded-full blur-3xl"></div>
             </section>
         </>
     )

@@ -15,7 +15,7 @@ function AboutUs() {
         <>
             {/* Hero */}
             <div className='w-full h-[45vh] lg:h-[68vh] bg-[#11395A]'>
-                <div className='bg-[url("/bg/bg_home.png")] bg-cover w-full h-full flex justify-center items-center p-2.5'>
+                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-cover w-full h-full flex justify-center items-center p-2.5">
                     <div className="space-y-4 p-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-white mt-12'>
                             About <span className='text-[#85E645]'>&nbsp;Lymora</span>
@@ -155,7 +155,7 @@ const VisionariesTab = () => {
                                         className="w-full h-full object-cover"
                                     />
                                     {/* Subtle gradient overlay on front */}
-                                    <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                         <p className="text-white text-xs font-bold">Click to view details</p>
                                     </div>
                                 </div>

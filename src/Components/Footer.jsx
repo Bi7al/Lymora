@@ -1,8 +1,31 @@
-import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import React, { useState, useEffect } from 'react'; // Added hooks
+import { Facebook, Instagram, Linkedin, ChevronUp } from 'lucide-react'; // Added ChevronUp
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    // Show button when page is scrolled down
+    useEffect(() => {
+        const toggleVisibility = () => {
+            if (window.pageYOffset > 300) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', toggleVisibility);
+        return () => window.removeEventListener('scroll', toggleVisibility);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     const quickLinks = [
         { name: "About Us", href: "/about" },
         { name: "Services", href: "/services" },
@@ -18,7 +41,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#11395A] text-white px-3 md:px-[5vw] lg:px-[12vw]">
+        <footer className="bg-[#11395A] text-white px-3 md:px-[5vw] lg:px-[12vw] relative">
             <div className="flex flex-col justify-between md:flex-row py-10 md:py-12 gap-8">
 
                 {/* Brand/About Column */}
@@ -53,7 +76,7 @@ const Footer = () => {
                     <h4 className="text-[#85E645] text-[18px] md:text-[22px] font-semibold mb-4 md:mt-4">
                         QUICK LINKS
                     </h4>
-                    <ul className="space-y-2 md:space-y-1  md:text-[18px]">
+                    <ul className="space-y-2 md:space-y-1 md:text-[18px]">
                         {quickLinks.map((link) => (
                             <li key={link.name}>
                                 <Link
@@ -72,7 +95,7 @@ const Footer = () => {
                     <h4 className="text-[#85E645] text-[18px] md:text-[22px] font-semibold mb-4 md:mt-4">
                         SERVICES
                     </h4>
-                    <ul className="space-y-2 md:space-y-1  md:text-[18px]">
+                    <ul className="space-y-2 md:space-y-1 md:text-[18px]">
                         {services.map((service) => (
                             <li key={service}>
                                 <span className="text-white hover:text-[#12ABEE] cursor-pointer transition-colors duration-300">
@@ -83,11 +106,21 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+
+            {/* Back to Top Button */}
+            {isVisible && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-8 right-8 bg-[#85E645] text-[#11395A] p-3 rounded-full shadow-lg hover:bg-[#12ABEE] hover:text-white transition-all duration-300 z-50 animate-bounce md:animate-none"
+                    aria-label="Back to top"
+                >
+                    <ChevronUp size={24} strokeWidth={3} />
+                </button>
+            )}
         </footer>
     );
 };
 
-// Internal Social Icon Component
 const SocialIcon = ({ icon, href = "#" }) => (
     <a
         href={href}

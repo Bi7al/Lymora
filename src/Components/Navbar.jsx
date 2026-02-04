@@ -93,7 +93,7 @@ const Navbar = () => {
                                     <Link
                                         to={link.to}
                                         onClick={() => setIsOpen(false)}
-                                        className="block px-4 py-2 text-[14px] font-medium text-[#1C1B17] hover:bg-[#12ABEE] hover:text-white rounded-md"
+                                        className="block px-4 py-2 text-[14px] font-medium text-[#1C1B17] bg-gray-50  rounded-md"
                                     >
                                         {link.name}
                                     </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
                             <Link
                                 to="/contact"
                                 onClick={() => setIsOpen(false)}
-                                className="block px-4 py-2 text-[14px] font-medium text-[#1C1B17] hover:bg-[#12ABEE] hover:text-white rounded-md"
+                                className="block px-4 py-2 text-[14px] font-medium text-[#1C1B17] bg-gray-50 rounded-md"
                             >
                                 Contact Us
                             </Link>
