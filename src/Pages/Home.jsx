@@ -20,8 +20,8 @@ function Home() {
     return (
         <>
             {/* HERO SECTION */}
-            <section className=' w-full h-[40vh] md:h-[35vh] lg:h-[82vh] bg-linear-to-r from-[#11395A]  to-[#11395A]  text-white'>
-                <div className="w-full h-full  flex flex-col justify-center items-center bg-[url('/bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover">
+            <section className=' w-full h-[40vh] md:h-[35vh] lg:h-[82vh] bg-[url("/bg/bg_main.jpeg")] bg-center bg-cover  text-white'>
+                <div className="w-full h-full  flex flex-col justify-center items-center bg-black/50 ">
                     <div className='md:w-2/3 lg:w-1/2 py-2.5 lg:mt-4'>
                         <h1 className='text-[32px] md:text-[40px] lg:text-[60px] text-center font-extrabold'>Lymora <span className='text-[#85E645]'>&nbsp;Solutions</span></h1>
                         <p className='md:text-[26px] lg:text-[30px] text-center mt-2 text-wrap px-4 font-medium'>
