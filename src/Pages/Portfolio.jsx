@@ -10,7 +10,7 @@ const PortfolioPage = () => {
             <div className='w-full h-[75vh] md:h-[50vh] lg:h-[73vh] bg-[#11395A]'>
 
 
-                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-cover w-full h-full flex justify-center items-start pb-12.5 pt-42.5">
+                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-start pb-12.5 pt-42.5">
                     <div className="flex flex-col items-center py-2.5 w-11/12">
 
                         <h1 className='w-11/12 md:w-9/12 lg:w-1/2 text-[36px] md:text-[40px] lg:text-[50px] font-semibold lg:font-bold text-center lg:leading-15 text-[white] mb-6 md:mb-4 leading-tight'>

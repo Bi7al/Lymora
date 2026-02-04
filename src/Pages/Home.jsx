@@ -21,7 +21,7 @@ function Home() {
         <>
             {/* HERO SECTION */}
             <section className=' w-full h-[40vh] md:h-[35vh] lg:h-[82vh] bg-linear-to-r from-[#11395A]  to-[#11395A]  text-white'>
-                <div className="w-full h-full  flex flex-col justify-center items-center bg-[url('bg/bg_home_mobile.png')] md:bg-[url('bg/bg_home.png')] bg-center bg-cover">
+                <div className="w-full h-full  flex flex-col justify-center items-center bg-[url('bg/bg_home_mobile.png')] md:bg-[url('bg/bg_home.png')] bg-center bg-contain md:bg-cover">
                     <div className='md:w-2/3 lg:w-1/2 py-2.5 lg:mt-4'>
                         <h1 className='text-[32px] md:text-[40px] lg:text-[60px] text-center font-extrabold'>Lymora <span className='text-[#85E645]'>&nbsp;Solutions</span></h1>
                         <p className='md:text-[26px] lg:text-[30px] text-center mt-2 text-wrap px-4 font-medium'>
@@ -45,7 +45,7 @@ function Home() {
             </section>
 
             {/* INTERMEDIATE CTA */}
-            <section className="w-full h-[35vh] md:h-[35vh] lg:h-[38vh] bg-[url('/bg_services.png')] bg-cover bg-center md:bg-right bg-no-repeat bg-white relative overflow-hidden flex items-center">
+            <section className="w-full h-[35vh] md:h-[35vh] lg:h-[38vh] bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat bg-white relative overflow-hidden flex items-center">
 
                 {/* Content Container: Centered on mobile, Left-aligned on md+ */}
                 <div className='w-full px-6 md:px-[8vw] lg:px-[12vw] relative z-10 flex flex-col items-center md:items-start text-center md:text-left'>

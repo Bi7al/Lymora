@@ -1,15 +1,15 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { services } from '../dataStore/Services';
+
 
 export default function Services() {
     return (
         <>
             {/* HERO */}
             <div className='w-full h-[55vh] md:h-[35vh] lg:h-[70vh] bg-[#11395A]'>
-                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-cover w-full h-full flex justify-center items-center pt-42.5 pb-12.5">
+                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center pt-42.5 pb-12.5">
                     <div className="flex flex-col items-center py-2.5">
 
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-white mb-4'>
@@ -83,27 +83,29 @@ export default function Services() {
             </section>
 
             {/* CTA SECTION */}
-            <section className="w-full h-[35vh] md:h-[32vh] lg:h-[40vh] bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-no-repeat bg-right text-white">
+            <section className="w-full h-[35vh] md:h-[35vh] lg:h-[38vh]  bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat bg-white relative overflow-hidden flex items-center">
 
-                <div className='h-full w-full bg-linear-to-r from-[#11395A] via-[#12ABEE] flex flex-col justify-center items-center md:items-start md:ps-4 lg:ps-48'>
+                {/* Content Container: Centered on mobile, Left-aligned on md+ */}
+                <div className='w-full px-6 md:px-[8vw] lg:px-[12vw] relative z-10 flex flex-col items-center md:items-start text-center md:text-left'>
 
-                    <h2 className='text-[24px] md:text-[45px]'>
+                    <h2 className='text-[14px] md:text-[20px] lg:text-[22px] text-[#12ABEE] font-semibold uppercase tracking-[0.2em] mb-2'>
                         Let's Build
                     </h2>
 
-                    <h1 className='text-[32px] sm:text-[38px] md:text-[60px] font-bold'>
+                    <h1 className='text-[30px] sm:text-[34px] md:text-[48px] lg:text-[54px] font-extrabold text-[#1C1B17] leading-tight'>
                         Your Dream Project
                     </h1>
 
                     <Link
                         to="/quote"
-                        className='border-2 border-white rounded-md py-2 px-6 hover:bg-[#85E645] hover:text-[#1C1B17] transition mt-4 md:mt-0 font-semibold'
+                        className='inline-block mt-6 border-2 border-[#12ABEE] text-[#1C1B17] font-bold rounded-md py-3 px-8 text-sm md:text-base hover:bg-[#85E645] hover:border-[#85E645] hover:text-[#11395A] transition-all duration-300 shadow-md'
                     >
                         Request a Quote
                     </Link>
-
                 </div>
 
+                {/* Optional: Mobile overlay to ensure text stays readable over the background image */}
+                <div className="absolute inset-0 bg-white/40 md:hidden z-0"></div>
             </section>
         </>
     )

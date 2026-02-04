@@ -89,7 +89,7 @@ const Navbar = () => {
                     >
                         <div className="pt-2 pb-4 space-y-1">
                             {navLinks.map((link) => (
-                                <motion.div key={link.name} whileTap={{ scale: 0.95 }}>
+                                <motion.div key={link.name} whileTap={{ scale: 0.95 }} >
                                     <Link
                                         to={link.to}
                                         onClick={() => setIsOpen(false)}
