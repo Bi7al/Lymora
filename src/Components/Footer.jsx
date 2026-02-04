@@ -41,16 +41,16 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#11395A] text-white px-3 md:px-[5vw] lg:px-[12vw] relative">
-            <div className="flex flex-col justify-between md:flex-row py-10 md:py-12 gap-8">
+        <footer className="bg-[#11395A] text-white px-4  relative">
+            <div className="w-full lg:w-10/12 flex flex-col justify-between md:flex-row py-10 md:py-12 gap-8 lg:gap-6">
 
                 {/* Brand/About Column */}
-                <div className="w-full md:w-5/6 lg:w-4/6 mb-0 md:pr-8 md:mr-[6vw]">
+                <div className="w-full md:w-4/6 lg:w-4/6  md:pr-8 md:mr-[6vw]">
                     <div className="mb-6">
                         <img
                             src="/logo_alt.png"
                             alt="Lymora Logo"
-                            className="brightness-125 object-cover"
+                            className="brightness-125 object-cover w-2/3 lg:w-1/2"
                         />
                     </div>
                     <p className="text-[18px] leading-relaxed mb-5 md:mb-8 text-white">
@@ -72,11 +72,11 @@ const Footer = () => {
                 </div>
 
                 {/* Quick Links Column */}
-                <div className="w-full md:w-2/4 mb-0">
-                    <h4 className="text-[#85E645] text-[18px] md:text-[22px] font-semibold mb-4 md:mt-4">
+                <div className="w-full md:w-2/4 ">
+                    <h4 className="text-[#85E645] text-[18px] md:text-[22px] font-semibold mb-2 md:mt-4">
                         QUICK LINKS
                     </h4>
-                    <ul className="space-y-2 md:space-y-1 md:text-[18px]">
+                    <ul className="space-y-2 md:space-y-1 ">
                         {quickLinks.map((link) => (
                             <li key={link.name}>
                                 <Link
@@ -92,10 +92,10 @@ const Footer = () => {
 
                 {/* Services Column */}
                 <div className="w-full md:w-2/4">
-                    <h4 className="text-[#85E645] text-[18px] md:text-[22px] font-semibold mb-4 md:mt-4">
+                    <h4 className="text-[#85E645] text-[18px] md:text-[22px] font-semibold mb-2 md:mt-4">
                         SERVICES
                     </h4>
-                    <ul className="space-y-2 md:space-y-1 md:text-[18px]">
+                    <ul className="space-y-2 md:space-y-1 ">
                         {services.map((service) => (
                             <li key={service}>
                                 <span className="text-white hover:text-[#12ABEE] cursor-pointer transition-colors duration-300">

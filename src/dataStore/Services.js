@@ -68,7 +68,7 @@ const serviceDataArray = [{
             title: "Ecommerce Solution",
             desc: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
             image: "/services/ecom.jpg",
-            link: "/services/8"
+            link: "/services/9"
         }
     ]
 }, {
@@ -190,7 +190,7 @@ const serviceDataArray = [{
             title: "Ecommerce Solution",
             desc: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
             image: "/services/ecom.jpg",
-            link: "/services/8"
+            link: "/services/9"
         },
         {
             title: "Artificial Intelligence",
@@ -415,7 +415,7 @@ const serviceDataArray = [{
             title: "Ecommerce Solution",
             desc: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
             image: "/services/ecom.jpg",
-            link: "/services/8"
+            link: "/services/9"
         }
     ]
 }, {
@@ -488,7 +488,7 @@ const serviceDataArray = [{
             title: "Ecommerce Solution",
             desc: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
             image: "/services/ecom.jpg",
-            link: "/services/8"
+            link: "/services/9"
         }
     ]
 }, {
@@ -566,128 +566,123 @@ const serviceDataArray = [{
     ]
 }, {
     hero: {
-        titleLine1: "Blockchain",
-        titleLine2: "", // Single line in the original source
-        description: "Decentralized applications and custom ledgers engineered using key protocols like Ethereum, Hyperledger Fabric, and Solana. We develop secure, transparent, and immutable platforms that unlock verifiable automation and next-generation tokenization capabilities.",
-        image: "/services/blockchain.jpg"
+        titleLine1: "Shopify",
+        titleLine2: "Development",
+        description: "High-performance e-commerce experiences built on the world's leading commerce platform. From custom Liquid themes to headless Shopify implementations, we build scalable online stores designed to convert visitors into loyal customers and streamline your retail operations.",
+        image: "/services/shopify_dev.jpg"
     },
     benefits: [
-        "Automates repetitive tasks to save time and cost",
-        "Enhances decision-making with data-driven insights",
-        "Improves accuracy through advanced algorithms",
-        "Boosts productivity with smart process optimization",
-        "Scales effortlessly as business demands grow",
-        "Delivers personalized user experiences"
+        "Fully responsive stores optimized for mobile shopping",
+        "Seamless integration with third-party ERPs and CRMs",
+        "Custom app development for unique business logic",
+        "Optimized page speeds for better SEO and lower bounce rates",
+        "Secure, PCI-compliant checkout and payment processing",
+        "Easy-to-manage backends for non-technical staff"
     ],
     process: [
         {
-            title: "Discovery & Planning",
-            desc: "We analyze your business needs and identify blockchain use cases for maximum value."
+            title: "Strategy & Store Audit",
+            desc: "We evaluate your product catalog and business goals to plan the optimal store architecture."
         },
         {
-            title: "Architecture & Design",
-            desc: "We design secure, scalable blockchain architectures tailored to your project."
+            title: "Custom UI/UX Design",
+            desc: "We design high-conversion layouts that align with your brand's visual identity and retail niche."
         },
         {
-            title: "Smart Contract Development",
-            desc: "We create and test smart contracts for automated, trustless transactions."
+            title: "Theme Development",
+            desc: "Our developers build custom, lightweight Liquid themes or extend existing ones without bloat."
         },
         {
-            title: "Integration & Development",
-            desc: "We integrate blockchain solutions with existing systems and develop decentralized applications."
+            title: "App & API Integration",
+            desc: "We connect your store to essential tools for shipping, inventory, and marketing automation."
         },
         {
-            title: "Testing & QA",
-            desc: "We conduct thorough testing to ensure security, performance, and reliability."
+            title: "Quality Assurance",
+            desc: "Rigorous testing across browsers and devices to ensure a flawless checkout experience."
         },
         {
-            title: "Deployment & Launch",
-            desc: "We deploy your blockchain solution to the mainnet with full launch support."
+            title: "Launch & Optimization",
+            desc: "We manage the migration and go-live process, followed by ongoing performance tuning."
         }
     ],
     technologies: [
         {
-            stack: "DApp & Wallet Integration",
-            description: "User-friendly interfaces for decentralized applications",
-            tags: ["React.js", "Next.js", "MetaMask Integration", "WalletConnect"]
+            stack: "Shopify Liquid + Hydrogen",
+            description: "Native Shopify templating and React-based headless frameworks for custom storefronts.",
+            tags: ["Liquid", "React", "Hydrogen"]
         },
         {
-            stack: "Backend & APIs for Web3",
-            description: "Building secure and scalable blockchain-powered backends",
-            tags: ["Node.js", "Express", "GraphQL", "REST APIs"]
+            stack: "Polaris + GraphQL",
+            description: "Official Shopify design systems and high-efficiency data querying for custom apps.",
+            tags: ["Polaris", "GraphQL", "Node.js"]
         }
     ],
     relatedServices: [
         {
-            title: "Digital Marketing",
-            desc: "Mastering the full spectrum of digital channels, we maximize brand visibility and deliver scalable growth.",
-            image: "/services/digi_market.jpg",
-            link: "/services/3"
-        },
-        {
-            title: "Mobile App Development",
-            desc: "We’ve achieved impressive landmarks in delivering industry-leading mobile application solutions.",
-            image: "/services/mad.jpg",
-            link: "/services/1"
-        },
-        {
             title: "UI/UX Design",
-            desc: "Our deep expertise delivers world-class, intuitive UI/UX design that elevates digital products.",
+            desc: "We craft intuitive, accessible, and visually stunning interfaces that maximize conversion rates.",
             image: "/services/ui_ux.jpg",
             link: "/services/2"
+        },
+        {
+            title: "Web Development",
+            desc: "We build robust, scalable web applications using modern full-stack technologies and agile methodologies.",
+            image: "/services/web_dev.jpg",
+            link: "/services/0"
+        },
+        {
+            title: "Digital Marketing",
+            desc: "Strategic campaigns designed to increase brand visibility, drive traffic, and boost ROI across digital channels.",
+            image: "/services/digi_market.jpg",
+            link: "/services/3"
         }
     ]
     }, {
         hero: {
-            titleLine1: "Shopify",
-            titleLine2: "Development",
-            description: "High-performance e-commerce experiences built on the world's leading commerce platform. From custom Liquid themes to headless Shopify implementations, we build scalable online stores designed to convert visitors into loyal customers and streamline your retail operations.",
-            image: "/services/shopify_dev.jpg"
+            titleLine1: "Ecommerce",
+            titleLine2: "Solution",
+            description: "High-conversion digital storefronts developed on leading platforms like Shopify Plus, Magento (Adobe Commerce), and WooCommerce. We architect fast, integrated, and customer-centric systems that maximize sales performance and ensure scalable growth during peak demand.",
+            image: "/services/ecom.jpg"
         },
         benefits: [
-            "Fully responsive stores optimized for mobile shopping",
-            "Seamless integration with third-party ERPs and CRMs",
-            "Custom app development for unique business logic",
-            "Optimized page speeds for better SEO and lower bounce rates",
-            "Secure, PCI-compliant checkout and payment processing",
-            "Easy-to-manage backends for non-technical staff"
+            "24/7 online storefront for continuous sales",
+            "Wider customer reach beyond physical locations",
+            "Lower operational costs compared to retail stores",
+            "Personalized shopping experiences with smart recommendations",
+            "Streamlined checkout for higher conversions",
+            "Scalable platform that grows with your business"
         ],
         process: [
             {
-                title: "Strategy & Store Audit",
-                desc: "We evaluate your product catalog and business goals to plan the optimal store architecture."
+                title: "Discovery & Strategy",
+                desc: "We analyze your business goals, target audience, and product offerings to plan the ecommerce solution."
             },
             {
-                title: "Custom UI/UX Design",
-                desc: "We design high-conversion layouts that align with your brand's visual identity and retail niche."
+                title: "Design & Prototyping",
+                desc: "We create user-friendly, responsive designs and interactive prototypes for validation."
             },
             {
-                title: "Theme Development",
-                desc: "Our developers build custom, lightweight Liquid themes or extend existing ones without bloat."
+                title: "Development",
+                desc: "We build scalable, secure, and high-performance ecommerce platforms."
             },
             {
-                title: "App & API Integration",
-                desc: "We connect your store to essential tools for shipping, inventory, and marketing automation."
+                title: "Integration",
+                desc: "We integrate payment gateways, inventory systems, and third-party tools seamlessly."
             },
             {
-                title: "Quality Assurance",
-                desc: "Rigorous testing across browsers and devices to ensure a flawless checkout experience."
+                title: "Testing & QA",
+                desc: "We perform rigorous testing to ensure functionality, security, and smooth user experience."
             },
             {
-                title: "Launch & Optimization",
-                desc: "We manage the migration and go-live process, followed by ongoing performance tuning."
+                title: "Deployment & Launch",
+                desc: "We launch your ecommerce store with full support for a successful go-live."
             }
         ],
         technologies: [
             {
-                stack: "Shopify Liquid + Hydrogen",
-                description: "Native Shopify templating and React-based headless frameworks for custom storefronts.",
-                tags: ["Liquid", "React", "Hydrogen"]
-            },
-            {
-                stack: "Polaris + GraphQL",
-                description: "Official Shopify design systems and high-efficiency data querying for custom apps.",
-                tags: ["Polaris", "GraphQL", "Node.js"]
+                stack: "E-Commerce Platforms",
+                description: "Expertise in building high-performance stores using industry-leading commerce engines.",
+                tags: ["Shopify Plus", "Magento", "WooCommerce"]
             }
         ],
         relatedServices: [
@@ -695,19 +690,19 @@ const serviceDataArray = [{
                 title: "UI/UX Design",
                 desc: "We craft intuitive, accessible, and visually stunning interfaces that maximize conversion rates.",
                 image: "/services/ui_ux.jpg",
-                link: "/services/0"
+                link: "/services/2"
             },
             {
                 title: "Web Development",
                 desc: "We build robust, scalable web applications using modern full-stack technologies and agile methodologies.",
                 image: "/services/web_dev.jpg",
-                link: "/services/1"
+                link: "/services/0"
             },
             {
                 title: "Digital Marketing",
                 desc: "Strategic campaigns designed to increase brand visibility, drive traffic, and boost ROI across digital channels.",
                 image: "/services/digi_market.jpg",
-                link: "/services/2"
+                link: "/services/3"
             }
         ]
     }];
@@ -758,16 +753,16 @@ const services = [
         description: "We establish the QA gold standard, transforming development into a high-efficiency engine.",
         imageUrl: "/services/sqa.jpg",
         link: "/services/7"
-    }, {
-        title: "Ecommerce Solution",
-        description: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
-        imageUrl: "/services/ecom.jpg",
-        link: "/services/8"
     },
     {
         title: "Shopify Development",
         description: "High-performance e-commerce experiences built on the world's leading commerce platform with custom themes and seamless integrations.",
         imageUrl: "/services/shopify_dev.jpg",
+        link: "/services/8"
+    }, {
+        title: "Ecommerce Solution",
+        description: "We deliver breakthrough rapid deployment of robust eCommerce with guaranteed peak performance.",
+        imageUrl: "/services/ecom.jpg",
         link: "/services/9"
     }
 

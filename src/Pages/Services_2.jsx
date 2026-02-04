@@ -42,9 +42,9 @@ const ServiceTemplate = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="relative ">
                         <div className="absolute -inset-4 bg-[#85E645]/20 rounded-3xl blur-2xl -z-10" />
-                        <img src={data.hero.image} alt={data.hero.titleLine1} className="rounded-3xl shadow-2xl w-full h-auto object-cover border border-white" />
+                        <img src={data.hero.image} alt={data.hero.titleLine1} className="aspect-video rounded-3xl shadow-2xl w-full h-auto object-cover border border-white" />
                     </div>
                 </div>
             </section>
@@ -137,14 +137,29 @@ const ServiceTemplate = () => {
             </section>
 
             {/* CALL TO ACTION */}
-            <section className="w-full h-[40vh] bg-[#11395A] relative border-b border-white">
-                <div className='h-full w-full flex flex-col justify-center items-center md:items-start md:ps-4 lg:ps-48 relative z-10'>
-                    <h2 className='text-[24px] md:text-[45px] text-[#12ABEE] font-bold'>Ready to Start?</h2>
-                    <h1 className='text-[32px] sm:text-[38px] md:text-[60px] font-extrabold text-white'>Your Dream Project</h1>
-                    <Link to="/quote" className='mt-8 border-2 border-[#85E645] text-white font-bold rounded-md py-3 px-10 hover:bg-[#85E645] hover:text-[#11395A] transition-all'>
+            <section className="w-full h-[35vh] md:h-[35vh] lg:h-[38vh]  bg-[url('/bg_services.png')] bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat bg-white relative overflow-hidden flex items-center">
+
+                {/* Content Container: Centered on mobile, Left-aligned on md+ */}
+                <div className='w-full px-6 md:px-[8vw] lg:px-[12vw] relative z-10 flex flex-col items-center md:items-start text-center md:text-left'>
+
+                    <h2 className='text-[14px] md:text-[20px] lg:text-[22px] text-[#12ABEE] font-semibold uppercase tracking-[0.2em] mb-2'>
+                        Let's Build
+                    </h2>
+
+                    <h1 className='text-[30px] sm:text-[34px] md:text-[48px] lg:text-[54px] font-extrabold text-[#1C1B17] leading-tight'>
+                        Your Dream Project
+                    </h1>
+
+                    <Link
+                        to="/quote"
+                        className='inline-block mt-6 border-2 border-[#12ABEE] text-[#1C1B17] font-bold rounded-md py-3 px-8 text-sm md:text-base hover:bg-[#85E645] hover:border-[#85E645] hover:text-[#11395A] transition-all duration-300 shadow-md'
+                    >
                         Request a Quote
                     </Link>
                 </div>
+
+                {/* Optional: Mobile overlay to ensure text stays readable over the background image */}
+                <div className="absolute inset-0 bg-white/40 md:hidden z-0"></div>
             </section>
         </main>
     );

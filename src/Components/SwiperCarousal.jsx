@@ -43,7 +43,7 @@ const services = [
     {
         title: "Blockchain",
         desc: "To expertly implement your blockchain ideas, we have a team of skilled blockchain technology specialists.",
-        link: "/services/8",
+        link: "/services/5",
         img: "blockchain"
     }
 ];

@@ -34,7 +34,7 @@ function Home() {
             <StatsCounter />
 
             {/* WHAT WE DO SECTION */}
-            <section className='pt-16 w-full bg-[#11395A]  flex flex-col justify-center items-center text-white'>
+            <section className='pt-16 w-full bg-[url("/bg/bg_main.jpeg")] bg-center bg-cover  flex flex-col justify-center items-center text-white'>
                 <div className='md:px-2.5 px-5 text-center flex flex-col justify-center items-center'>
                     <h1 className='text-[30px] md:text-[40px] font-bold mb-4'>What We Do</h1>
                     <p className='text-[14px] md:text-base lg:text-[18px] w-full md:w-3/4 lg:w-1/2 text-blue-50'>
@@ -71,7 +71,7 @@ function Home() {
             </section>
 
             {/* HOW WE WORK SECTION */}
-            <section className='w-full h-auto bg-[#11395A] px-5 text-white py-16 pb-20'>
+            <section className='w-full h-auto bg-[url("/bg/bg_main.jpeg")] bg-center bg-cover px-5 text-white py-16 pb-20'>
                 <div className='text-center flex flex-col justify-center items-center'>
                     <h1 className='text-[30px] md:text-[40px] font-bold'>How We Work</h1>
                     <p className='text-[20px] mt-4 text-blue-200'>Our proven development process ensures quality results and transparent communication</p>
@@ -102,15 +102,15 @@ function Home() {
             <Testimonials />
 
             {/* FINAL CTA SECTION */}
-            <section className="w-full h-[32vh] md:h-[35vh] lg:h-[38vh] bg-[#11395A] relative overflow-hidden flex items-center">
+            <section className='w-full h-[32vh] md:h-[35vh] lg:h-[38vh] bg-[url("/bg/bg_main.jpeg")] bg-center bg-cover relative overflow-hidden flex items-center'>
                 {/* Background Gradient Overlay */}
-                <div className='h-full w-full bg-linear-to-r from-[#11395A] via-[#12ABEE]/20 flex flex-col justify-center items-center md:items-start px-6 md:px-[8vw] lg:px-[12vw] relative z-10'>
+                <div className='h-full w-full text-white  flex flex-col justify-center items-center md:items-start px-6 md:px-[8vw] lg:px-[12vw] relative z-10'>
 
-                    <h2 className='text-[16px] md:text-[20px] lg:text-[22px] text-[#12ABEE] font-semibold uppercase tracking-[0.2em] mb-2'>
+                    <h2 className='text-[16px] md:text-[20px] lg:text-[22px]  font-semibold uppercase tracking-[0.2em] mb-2'>
                         Let's Build
                     </h2>
 
-                    <h1 className='text-[28px] sm:text-[36px] md:text-[48px] lg:text-[54px] font-extrabold text-white leading-tight'>
+                    <h1 className='text-[28px] sm:text-[36px] md:text-[48px] lg:text-[54px] font-extrabold  leading-tight'>
                         Your Dream Project
                     </h1>
 
