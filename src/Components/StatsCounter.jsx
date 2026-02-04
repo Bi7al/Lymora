@@ -73,7 +73,7 @@ export default function StatsCounter() {
 
                             <Counter end={stat.value} suffix={stat.suffix} />
 
-                            <p className="md:mt-2 text-gray-500 text-[12px] w-full lg:text-[19px] font-medium uppercase tracking-widest">
+                            <p className="md:mt-2 text-gray-500 text-[12px] lg:text-[19px] font-medium uppercase tracking-tight md:tracking-widest">
                                 {stat.label}
                             </p>
                         </div>
