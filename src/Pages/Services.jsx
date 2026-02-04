@@ -9,7 +9,7 @@ export default function Services() {
         <>
             {/* HERO */}
             <div className='w-full h-[55vh] md:h-[35vh] lg:h-[70vh] bg-[#11395A]'>
-                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center pt-42.5 pb-12.5">
+                <div className="bg-[url('/bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center pt-42.5 pb-12.5">
                     <div className="flex flex-col items-center py-2.5">
 
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-white mb-4'>

@@ -61,7 +61,7 @@ export default function QuoteForm() {
         <>
             {/* HERO */}
             <div className='w-full h-[40vh] md:h-[35vh] lg:h-[60vh] bg-[#11395A]'>
-                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center p-2.5">
+                <div className="bg-[url('/bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center p-2.5">
                     <div className="space-y-4 p-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#85E645] mt-12'>Get a Quote</h1>
                         <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7 font-medium'>

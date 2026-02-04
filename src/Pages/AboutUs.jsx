@@ -15,7 +15,7 @@ function AboutUs() {
         <>
             {/* Hero */}
             <div className='w-full h-[45vh] lg:h-[68vh] bg-[#11395A]'>
-                <div className="bg-[url('bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center p-2.5">
+                <div className="bg-[url('/bg/bg_home_mobile.png')] md:bg-[url('/bg/bg_home.png')] bg-center bg-contain md:bg-cover w-full h-full flex justify-center items-center p-2.5">
                     <div className="space-y-4 p-2.5">
                         <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-white mt-12'>
                             About <span className='text-[#85E645]'>&nbsp;Lymora</span>
