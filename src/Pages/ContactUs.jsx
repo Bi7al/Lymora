@@ -18,10 +18,10 @@ export default function ContactUs() {
     return (
         <>
             {/* Hero */}
-            <div className='w-full h-[40vh] md:h-[35vh] lg:h-[70vh] bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A]'>
-                <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
+            <div className='w-full h-[40vh] md:h-[35vh] lg:h-[70vh] bg-[#11395A]'>
+                <div className='bg-[url("/bg/bg_home.png")] bg-cover w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
-                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#1C1B17] mt-12'>
+                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#85E645] mt-12'>
                             Get in Touch With Us
                         </h1>
                         <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7'>
@@ -49,17 +49,10 @@ export default function ContactUs() {
                         </div>
 
                         <div className="space-y-4 ps-2">
-                            <ContactInfoItem
-                                icon={<MapPin size={24} />}
-                                text="205-B, Satellite Town, Rawalpindi, Punjab 46300"
-                            />
-                            <ContactInfoItem
-                                icon={<Phone size={24} />}
-                                text="+92 343 689 3822"
-                            />
+
                             <ContactInfoItem
                                 icon={<Mail size={24} />}
-                                text="Info@lymora.com"
+                                text="lymorasolutions@gmail.com"
                             />
                         </div>
                     </div>
@@ -68,17 +61,19 @@ export default function ContactUs() {
                     <div className="w-full lg:w-4/9">
                         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                            <Input label="Name" onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+                            <Input label="Name" placeholder={"John Doe"} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
 
                             <Input
                                 label="Email *"
                                 required
+                                placeholder={"john@gmail.com"}
                                 type="email"
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                             />
 
                             <Input
                                 label="Contact Number *"
+                                placeholder={+12345678911}
                                 required
                                 type="tel"
                                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -86,6 +81,7 @@ export default function ContactUs() {
 
                             <Input
                                 label="Company Name *"
+                                placeholder={"abc Pvt Ltd"}
                                 required
                                 type="text"
                                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -95,7 +91,7 @@ export default function ContactUs() {
                                 <label className="font-semibold text-gray-700">Message</label>
                                 <textarea
                                     rows="3"
-                                    className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#12ABEE] focus:outline-none transition-all"
+                                    className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#12ABEE] focus:outline-none transition-all"
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 ></textarea>
                             </div>
@@ -118,13 +114,14 @@ export default function ContactUs() {
 }
 
 /* Input component */
-const Input = ({ label, type = "text", required = false, onChange }) => (
+const Input = ({ label, type = "text", required = false, onChange, placeholder }) => (
     <div className="flex flex-col space-y-1">
         <label className="font-semibold text-gray-700">{label}</label>
         <input
             required={required}
+            placeholder={placeholder}
             type={type}
-            className="p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#12ABEE] focus:outline-none transition-all"
+            className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#12ABEE] focus:outline-none transition-all"
             onChange={onChange}
         />
     </div>

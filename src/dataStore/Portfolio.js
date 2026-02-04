@@ -13,7 +13,7 @@ const portfolioItems = [
         country: "United Kingdom",
         tech: ["HTML", "CSS", "JavaScript"],
         link: "https://illumin8skin.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/3.jpg"
+        image: "/portfolio/illumin8.png"
     },
 
 
@@ -26,28 +26,20 @@ const portfolioItems = [
         country: "India",
         tech: ["WooCommerce", "WordPress"],
         link: "https://vinihazari.com",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/6.jpg"
+        image: "/portfolio/vini_hazari.png"
     },
 
-
-
-
-    {
-        title: "Landmark Equity Estates",
-        tagline: "Construction Company Website",
-        description: "A corporate website designed for a real estate and construction company.",
-        type: "Corporate Website",
-        duration: "3 weeks",
-        country: "United States",
-        tech: ["HTML", "CSS", "JavaScript"],
-        link: "https://landmarkequityestates.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/11.jpg"
-    },
-
-
-
-
-
+    // {
+    //     title: "Landmark Equity Estates",
+    //     tagline: "Construction Company Website",
+    //     description: "A corporate website designed for a real estate and construction company.",
+    //     type: "Corporate Website",
+    //     duration: "3 weeks",
+    //     country: "United States",
+    //     tech: ["HTML", "CSS", "JavaScript"],
+    //     link: "https://landmarkequityestates.com/",
+    //     image: ""
+    // },
 
     {
         title: "Arab Watch Guide",
@@ -58,7 +50,7 @@ const portfolioItems = [
         country: "United Arab Emirates",
         tech: ["HTML", "CSS", "JavaScript"],
         link: "http://arabwatchguide.com",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/19.jpg"
+        image: "/portfolio/arab_watch.png"
     },
     {
         title: "Scientech Labs",
@@ -69,7 +61,7 @@ const portfolioItems = [
         country: "United States",
         tech: ["WordPress"],
         link: "https://scientech-labs.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/20.jpg"
+        image: "/portfolio/scientech.png"
     },
     {
         title: "Adweb Studio",
@@ -80,7 +72,7 @@ const portfolioItems = [
         country: "United States",
         tech: ["HTML", "CSS", "JavaScript"],
         link: "https://www.adwebstudio.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/21.jpg"
+        image: "/portfolio/adweb.png"
     },
     {
         title: "Icy Cold Records",
@@ -91,7 +83,7 @@ const portfolioItems = [
         country: "United States",
         tech: ["Ecommerce"],
         link: "https://www.icycoldrecords2.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/22.jpg"
+        image: "/portfolio/ice_cold.png"
     },
 
     {
@@ -103,7 +95,7 @@ const portfolioItems = [
         country: "United States",
         tech: ["Ecommerce"],
         link: "https://www.headshotsbyreem.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/24.jpg"
+        image: "/portfolio/headshotbyreem.png"
     }, {
         title: "Bridge Africa",
         tagline: "Corporate Business Website",
@@ -113,7 +105,7 @@ const portfolioItems = [
         country: "Nigeria",
         tech: ["HTML", "CSS", "JavaScript"],
         link: "https://bridgeafrica.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/26.jpg"
+        image: "/portfolio/bridgeafrica.png"
     },
     {
         title: "Elyxar Superfoods",
@@ -124,7 +116,7 @@ const portfolioItems = [
         country: "United States",
         tech: ["Shopify", "Liquid"],
         link: "https://elyxarsuperfoods.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/27.jpg"
+        image: "/portfolio/elyxar.png"
     },
 
     {
@@ -136,7 +128,7 @@ const portfolioItems = [
         country: "United States",
         tech: ["Shopify", "Liquid"],
         link: "https://www.bananacrystal.com/",
-        image: "https://nextpak.org/wp-content/uploads/2025/04/29.jpg"
+        image: "/portfolio/banancrystal.png"
     }
 
 

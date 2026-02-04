@@ -102,7 +102,7 @@ const Testimonials = () => {
                                     {/* Identity */}
                                     <div className="w-full border-t border-gray-50 pt-6">
                                         <h4 className="text-lg font-bold text-[#1C1B17]">{test.name}</h4>
-                                        <p className="text-[#12ABEE] font-bold uppercase tracking-widest text-[10px] md:text-[11px] mt-1">
+                                        <p className="text-[#12ABEE] font-bold uppercase tracking-widest text-[13px] md:text-[14px] mt-1">
                                             {test.role}
                                         </p>
                                     </div>
@@ -112,10 +112,10 @@ const Testimonials = () => {
                     </Swiper>
 
                     {/* Navigation Controls - Desktop only */}
-                    <button className="test-prev absolute -left-10 top-1/2 -translate-y-1/2 -translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-[#12ABEE] transition-colors hidden xl:flex">
+                    <button className="test-prev absolute -left-10 top-1/2 -translate-y-1/2 -translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-[#12ABEE] transition-colors hidden md:flex">
                         <ChevronLeft size={24} />
                     </button>
-                    <button className="test-next absolute -right-10 top-1/2 -translate-y-1/2 translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-[#12ABEE] transition-colors hidden xl:flex">
+                    <button className="test-next absolute -right-10 top-1/2 -translate-y-1/2 translate-x-12 z-10 p-3 bg-white shadow-lg rounded-full text-gray-400 hover:text-[#12ABEE] transition-colors hidden md:flex">
                         <ChevronRight size={24} />
                     </button>
 
@@ -125,7 +125,7 @@ const Testimonials = () => {
             </div>
 
             {/* Global style override for Swiper Pagination to match Action Blue */}
-            <style jsx global>{`
+            <style jsx="true" global="true" >{`
                 .test-pagination .swiper-pagination-bullet-active {
                     background: #12ABEE !important;
                 }

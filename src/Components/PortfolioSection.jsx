@@ -6,25 +6,25 @@ const PortfolioGrid = () => {
         {
             title: "Elyxar Superfoods",
             category: "Ecommerce Website",
-            image: "https://nextpak.org/wp-content/uploads/2025/04/1.jpg",
+            image: "/portfolio/elyxar.png",
             link: "https://elyxarsuperfoods.com/"
         },
         {
             title: "Banana Crystal",
             category: "Ecommerce Website",
-            image: "https://nextpak.org/wp-content/uploads/2025/04/2.jpg",
+            image: "/portfolio/banancrystal.png",
             link: "https://www.bananacrystal.com/"
         },
         {
             title: "Bridge Africa",
             category: "Corporate Website",
-            image: "https://nextpak.org/wp-content/uploads/2025/04/3.jpg",
+            image: "/portfolio/bridgeafrica.png",
             link: "https://bridgeafrica.com/"
         },
         {
             title: "Vini Hazari",
             category: "Ecommerce Website",
-            image: "https://nextpak.org/wp-content/uploads/2025/04/5.jpg",
+            image: "/portfolio/vini_hazari.png",
             link: "https://vinihazari.com"
         }
     ];
@@ -52,6 +52,7 @@ const PortfolioGrid = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
+
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
@@ -69,6 +70,7 @@ const PortfolioGrid = () => {
 
                                 <a
                                     href={project.link}
+                                    target="_blank" rel="noopener noreferrer"
                                     className="inline-flex items-center border-2 border-[#12ABEE] justify-center px-6 py-2.5 bg-white text-[#12ABEE] font-bold text-[14px] md:text-[16px] rounded-lg transition-all duration-300 hover:bg-[#85E645] hover:border-[#85E645] hover:text-[#1C1B17] active:scale-95"
                                 >
                                     View Live Site

@@ -6,7 +6,14 @@ import serviceDataArray from '../dataStore/Services';
 
 const ServiceTemplate = () => {
     const { index } = useParams();
-    const data = serviceDataArray[index];
+    const data = serviceDataArray[Number(index)];
+    if (!data) {
+        return (
+            <main className="w-full h-screen flex items-center justify-center">
+                <h1 className="text-2xl font-bold">Service not found</h1>
+            </main>
+        );
+    }
 
     return (
         <main className="w-full overflow-hidden bg-white">

@@ -1,4 +1,4 @@
-import { HeartPlus, ShoppingCart, Landmark, Calculator, Wallet, BaggageClaim } from 'lucide-react';
+import { HeartPlus, ShoppingCart, Landmark, Wallet, BaggageClaim, GraduationCap } from 'lucide-react';
 import React from 'react';
 
 const industries = [
@@ -20,7 +20,7 @@ const industries = [
     {
         title: "Education & E-Learning",
         desc: "Creating LMS platforms, virtual classrooms, and interactive learning mobile apps.",
-        icon: <Calculator className='h-12 w-12 text-[#12ABEE]' />
+        icon: <GraduationCap className='h-12 w-12 text-[#12ABEE]' />
     },
     {
         title: "Real Estate & PropTech",
@@ -53,7 +53,7 @@ const Industries = () => {
                     {industries.map((industry, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl transition-all duration-300 hover:scale-[1.05] hover:bg-white hover:shadow-[0px_0px_30px_rgba(18,171,238,0.3)] group"
+                            className="flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl transition-all duration-300 hover:border   hover:shadow-[0px_0px_30px_rgba(18,171,238,0.3)] group"
                         >
                             {/* Icon Wrapper */}
                             <div className="w-20 h-20 mb-6 flex items-center justify-center bg-white rounded-full shadow-lg group-hover:bg-[#EAF6FD] transition-all">
@@ -62,10 +62,10 @@ const Industries = () => {
 
                             {/* Text Content */}
                             <div className="text-center">
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#11395A] transition-colors">
+                                <h3 className="text-xl font-bold text-white mb-3 transition-colors">
                                     {industry.title}
                                 </h3>
-                                <p className="text-gray-300 leading-relaxed text-sm md:text-base group-hover:text-gray-600 transition-colors">
+                                <p className="text-gray-300 leading-relaxed text-sm md:text-base  ">
                                     {industry.desc}
                                 </p>
                             </div>

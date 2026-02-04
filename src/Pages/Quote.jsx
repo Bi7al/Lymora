@@ -60,10 +60,10 @@ export default function QuoteForm() {
     return (
         <>
             {/* HERO */}
-            <div className='w-full h-[40vh] md:h-[35vh] lg:h-[60vh] bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A]'>
-                <div className='bg-white/20 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
+            <div className='w-full h-[40vh] md:h-[35vh] lg:h-[60vh] bg-[#11395A]'>
+                <div className='bg-[url("/bg/bg_home.png")] bg-cover w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
-                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#1C1B17] mt-12'>Get a Quote</h1>
+                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#85E645] mt-12'>Get a Quote</h1>
                         <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-full md:w-5/7 lg:w-4/7 font-medium'>
                             Share your requirements and receive a personalized quote tailored to your needs.
                         </p>
@@ -232,7 +232,7 @@ const Select = ({ label, options, error, value, onChange }) => (
 
 const Review = ({ label, value }) => (
     <div className="flex flex-col md:flex-row md:justify-between border-b border-gray-200/50 py-3 gap-1">
-        <span className="text-[10px] font-extrabold uppercase tracking-tighter text-gray-400">{label}</span>
+        <span className="text-[12px] font-extrabold uppercase tracking-tighter text-gray-600">{label}</span>
         <span className="font-bold text-[#11395A]">{value || "—"}</span>
     </div>
 );

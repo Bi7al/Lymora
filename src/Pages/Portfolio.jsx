@@ -7,20 +7,23 @@ const PortfolioPage = () => {
         <div className="bg-white min-h-screen">
 
             {/* HERO */}
-            <div className='w-full h-[75vh] md:h-[50vh] lg:h-[73vh] bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A]'>
-                <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-start pb-12.5 pt-42.5'>
+            <div className='w-full h-[75vh] md:h-[50vh] lg:h-[73vh] bg-[#11395A]'>
+
+
+                <div className='bg-[url("/bg/bg_home.png")] bg-cover w-full h-full flex justify-center items-start pb-12.5 pt-42.5'>
                     <div className="flex flex-col items-center py-2.5 w-11/12">
 
-                        <h1 className='w-11/12 md:w-9/12 lg:w-1/2 text-[36px] md:text-[40px] lg:text-[50px] font-semibold lg:font-bold text-center lg:leading-15 text-[#1C1B17] mb-6 md:mb-4 leading-tight'>
-                            Showcasing a Legacy of Digital Innovation
+                        <h1 className='w-11/12 md:w-9/12 lg:w-1/2 text-[36px] md:text-[40px] lg:text-[50px] font-semibold lg:font-bold text-center lg:leading-15 text-[white] mb-6 md:mb-4 leading-tight'>
+                            Showcasing a Legacy of <span className='text-[#85E645]'>Digital Innovation</span>
                         </h1>
 
                         <p className='text-center mx-auto md:text-[19px] text-white w-full md:w-11/12 lg:w-7/12 mb-2 leading-6'>
-                            At Nextpak, we specialize in crafting transformative digital experiences that go beyond functionality to inspire and engage. Our portfolio highlights a diverse range of high-impact applications designed to elevate brands, streamline operations, and foster user delight across the globe.
+                            At Lymora, we specialize in crafting transformative digital experiences that go beyond functionality to inspire and engage. Our portfolio highlights a diverse range of high-impact applications designed to elevate brands, streamline operations, and foster user delight across the globe.
                         </p>
 
                     </div>
                 </div>
+
             </div>
 
             {/* PORTFOLIO */}
@@ -31,7 +34,7 @@ const PortfolioPage = () => {
                         <div
                             key={item.title}
                             className={`flex flex-col-reverse border border-gray-200 bg-white p-3 rounded-3xl lg:flex-row gap-10 items-center group hover:shadow-xl transition
-                            ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'ps-4'}`}
+                            ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:ps-4'}`}
                         >
 
                             {/* TEXT */}
@@ -60,7 +63,7 @@ const PortfolioPage = () => {
                                 </div>
 
                                 <div className="flex flex-wrap gap-2">
-                                    {item.tech.map((t) => (
+                                    {item.tech?.map((t) => (
                                         <span
                                             key={t}
                                             className="px-3 py-1 bg-[#EAF6FD] text-xs font-bold rounded-md text-[#11395A]"

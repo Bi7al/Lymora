@@ -8,12 +8,12 @@ export default function Services() {
     return (
         <>
             {/* HERO */}
-            <div className='w-full h-[55vh] md:h-[35vh] lg:h-[70vh] bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A]'>
-                <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center pt-42.5 pb-12.5'>
+            <div className='w-full h-[55vh] md:h-[35vh] lg:h-[70vh] bg-[#11395A]'>
+                <div className='bg-[url("/bg/bg_home.png")] bg-cover w-full h-full flex justify-center items-center pt-42.5 pb-12.5'>
                     <div className="flex flex-col items-center py-2.5">
 
-                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#1C1B17] mb-4'>
-                            Lymora Services
+                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-white mb-4'>
+                            <span className='text-[#85E645]'>Lymora</span>&nbsp;Services
                         </h1>
 
                         <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-10/12 md:w-5/7 lg:w-4/7 mb-4'>

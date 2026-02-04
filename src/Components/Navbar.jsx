@@ -18,7 +18,7 @@ const Navbar = () => {
         <motion.nav
             initial={{ y: -80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="fixed top-0 left-0 w-full z-50 bg-[#11395A]/80 backdrop-blur-md md:shadow-sm"
         >
             <div className="w-full px-2 md:px-10 lg:px-12">
@@ -61,7 +61,7 @@ const Navbar = () => {
                     {/* CTA Button */}
                     <Link
                         to={"/quote"}
-                        className="hidden lg:flex ml-4 px-5 py-2 bg-[#12ABEE] text-white rounded-md hover:bg-[#85E645] hover:text-[#adadad] transition active:scale-95 shadow-md"
+                        className="hidden lg:flex ml-4 px-5 py-2 bg-[#12ABEE] text-white rounded-md hover:bg-[#85E645]  transition active:scale-95 shadow-md"
                     >
                         Get a Quote
                     </Link>

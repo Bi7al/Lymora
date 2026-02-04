@@ -7,42 +7,43 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom';
 
 const services = [
     {
         title: "Web Development",
         desc: "We’ve reached significant milestones in providing top-tier web development services.",
-        link: "https://nextpak.org/services/web-development/",
+        link: "/services/0",
         img: "web_dev"
     },
     {
         title: "Mobile Development",
         desc: "We create attractive and highly convenient mobile applications. Our top service is transforming client ideas into reality.",
-        link: "https://nextpak.org/services/mobile-app-development/",
+        link: "/services/1",
         img: "mad"
     },
     {
         title: "Digital Marketing",
         desc: "Guided by our expert marketers’ recommendations, we effectively reach the right customers.",
-        link: "https://nextpak.org/services/digital-marketing/",
+        link: "/services/3",
         img: "digi_market"
     },
     {
         title: "Artificial Intelligence",
         desc: "To expertly implement your AI-driven ideas, we have a team of skilled artificial intelligence specialists.",
-        link: "https://nextpak.org/services/artifical-intelligence/",
+        link: "/services/4",
         img: "ai"
     },
     {
         title: "Software Quality Assurance",
         desc: "To expertly ensure the quality of your software, we have a team of proficient software quality specialists.",
-        link: "https://nextpak.org/services/software-quality-assurance/",
+        link: "/services/7",
         img: "sqa"
     },
     {
         title: "Blockchain",
         desc: "To expertly implement your blockchain ideas, we have a team of skilled blockchain technology specialists.",
-        link: "https://nextpak.org/services/blockchain/",
+        link: "/services/8",
         img: "blockchain"
     }
 ];
@@ -83,12 +84,12 @@ const ServiceCarousel = () => {
                                     <p className="mb-8 grow leading-relaxed text-gray-100">
                                         {service.desc}
                                     </p>
-                                    <a
-                                        href={service.link}
+                                    <Link
+                                        to={service.link}
                                         className="inline-block px-6 py-3 bg-[#12ABEE] text-white text-center font-bold rounded-lg transition-all hover:bg-[#85E645] hover:text-[#1C1B17] active:scale-95 shadow-md"
                                     >
                                         Learn More
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -108,7 +109,7 @@ const ServiceCarousel = () => {
             </div>
 
             {/* Pagination Style Override */}
-            <style jsx global>{`
+            <style jsx="true" global="true">{`
                 .custom-pagination .swiper-pagination-bullet-active {
                     background: #12ABEE !important;
                     width: 24px;

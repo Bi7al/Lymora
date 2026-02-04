@@ -14,11 +14,11 @@ function AboutUs() {
     return (
         <>
             {/* Hero */}
-            <div className='w-full h-[45vh] lg:h-[68vh] bg-linear-to-r from-[#11395A] via-[#12ABEE] to-[#11395A]'>
-                <div className='bg-white/30 backdrop-blur-md w-full h-full flex justify-center items-center p-2.5'>
+            <div className='w-full h-[45vh] lg:h-[68vh] bg-[#11395A]'>
+                <div className='bg-[url("/bg/bg_home.png")] bg-cover w-full h-full flex justify-center items-center p-2.5'>
                     <div className="space-y-4 p-2.5">
-                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-[#1C1B17] mt-12'>
-                            About Lymora
+                        <h1 className='text-[32px] md:text-[40px] lg:text-5xl font-extrabold text-center text-white mt-12'>
+                            About <span className='text-[#85E645]'>&nbsp;Lymora</span>
                         </h1>
                         <p className='text-center mx-auto md:text-xl lg:text-2xl text-white w-10/12 md:w-5/7 lg:w-4/7'>
                             We are a development and design studio that works closely with software development agencies to create futuristic products through our skilled resources. How we can help you!

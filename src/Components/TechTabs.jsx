@@ -72,7 +72,7 @@ const TechSection = () => {
                                         exit={{ height: 0, opacity: 0 }}
                                         className="overflow-hidden bg-white"
                                     >
-                                        <div className="grid grid-cols-2 gap-6 p-6">
+                                        <div className="grid grid-cols-2 gap-6 p-3">
                                             {cat.items.map((item, i) => (
                                                 <TechCard key={i} item={item} />
                                             ))}
@@ -131,7 +131,7 @@ const TechCard = ({ item }) => (
                 className="max-w-full max-h-full object-contain transition-all"
             />
         </div>
-        <p className="text-[12px] md:text-sm lg:text-base font-bold text-gray-600 group-hover:text-[#12ABEE] uppercase tracking-tight transition-colors">
+        <p className="text-[14px] md:text-sm lg:text-base font-bold text-gray-600 group-hover:text-[#12ABEE] uppercase tracking-tight transition-colors">
             {item.name}
         </p>
     </div>
