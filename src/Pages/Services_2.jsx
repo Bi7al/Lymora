@@ -37,7 +37,7 @@ const ServiceTemplate = () => {
                             <Link to="/contact" className="w-fit flex items-center gap-1 px-4 md:px-8 py-2 md:py-4 bg-[#12ABEE] text-white font-bold rounded-xl shadow-lg hover:bg-[#11395A] transition-all active:scale-95">
                                 Get Started <ArrowRight size={20} />
                             </Link>
-                            <Link to={"/contact"} className="w-fit group flex items-center gap-1 px-4 md:px-8 py-4 bg-white border-2 border-gray-100 text-[#1C1B17] font-bold rounded-xl hover:border-[#12ABEE] transition-all">
+                            <Link to={"/contact"} className="w-fit group flex items-center gap-1 px-4 md:px-8 py-4 bg-white border-2 border-gray-300 text-[#1C1B17] font-bold rounded-xl hover:border-[#12ABEE] transition-all">
                                 Consultation <ArrowRight size={20} className="text-[#12ABEE]" />
                             </Link>
                         </div>
