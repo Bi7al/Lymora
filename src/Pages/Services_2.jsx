@@ -20,7 +20,7 @@ const ServiceTemplate = () => {
 
             {/* HERO SECTION */}
             <section className="relative py-15 md:py-20 lg:pt-32 bg-[#F8FAFC] overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
                     <div className="space-y-8">
                         <div className="flex items-center mt-4 gap-3 bg-[#12ABEE]/10 w-fit px-4 py-2 rounded-full border border-[#12ABEE]/20">
                             <div className="bg-[#12ABEE] p-1.5 rounded-full text-white">
@@ -37,9 +37,9 @@ const ServiceTemplate = () => {
                             <Link to="/contact"><button className="flex items-center gap-2 px-8 py-4 bg-[#12ABEE] text-white font-bold rounded-xl shadow-lg hover:bg-[#11395A] transition-all active:scale-95">
                                 Get Started <ArrowRight size={20} />
                             </button></Link>
-                            <button className="group flex items-center gap-2 px-8 py-4 bg-white border-2 border-gray-100 text-[#1C1B17] font-bold rounded-xl hover:border-[#12ABEE] transition-all">
+                            {/* <button className="group flex items-center gap-2 px-8 py-4 bg-white border-2 border-gray-100 text-[#1C1B17] font-bold rounded-xl hover:border-[#12ABEE] transition-all">
                                 Schedule Consultation <ArrowRight size={20} className="text-[#12ABEE]" />
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                     <div className="relative ">

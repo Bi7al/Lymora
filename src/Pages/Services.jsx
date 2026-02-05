@@ -38,7 +38,7 @@ export default function Services() {
                     What We Deliver
                 </h1>
 
-                <p className='text-center text-[18px] mt-4 mb-4 text-gray-600'>
+                <p className='text-center text-[18px] px-2 mt-4 mb-4 text-gray-600'>
                     End-to-end solutions tailored to your business objectives
                 </p>
 
