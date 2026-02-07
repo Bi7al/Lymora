@@ -36,7 +36,7 @@ const industries = [
 
 const Industries = () => {
     return (
-        <section className="py-20 bg-[#11395A] radial_hero_bg relative overflow-hidden">
+        <section className='py-20 bg-[url("/bg/bg_main.jpeg")] bg-center bg-cover radial_hero_bg relative overflow-hidden' >
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 {/* Header Section */}
                 <div className="text-center mb-16 space-y-4">
